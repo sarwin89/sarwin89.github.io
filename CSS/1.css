@@ -1,0 +1,51 @@
+body{
+background: #161748;
+font-family: Bebas Neue;
+position: relative; left: 10px;
+color: #478559;
+}
+h1{
+	font-size: 400%;
+	text-align: center;
+	color: #f95d9b;
+}
+h2{
+	font-size: 200%;
+	color: #39a0ca;
+}
+nav{
+	font-size: 125%;
+	background: #1F2833;
+	display:inline-block;
+	text-align:center;
+}
+p{
+	position: relative; left: 15px;
+	font-size: 125%;
+	color: #FFFFFF;
+}
+summary{
+	font-size: 125%;
+	color: #FFFFFF;
+}
+progress{
+	position:absolute;
+	left: 325px;
+	color: #39a0ce;
+}
+li{
+	font-size: 125%;
+	color: #FFFFFF;
+}
+a:link {
+	color: #DDDDDD
+}
+a:visited {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #8EBF42;
+}
+a:active{
+	color: #80FD34;
+}
