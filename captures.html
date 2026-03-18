@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Captures | Sarwin Chandran</title>
+  <meta name="description" content="Captures page of Sarwin Chandran with night-sky frames, observation notes, and visual records.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      var stored = window.localStorage.getItem("sarwinTheme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom-style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="page-captures">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="mobile-bar">
+      <a class="mobile-brand" href="index.html">
+        <strong>Sarwin Chandran</strong>
+        <span>Discover Me</span>
+      </a>
+      <div class="mobile-actions">
+        <button class="mobile-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="sr-only" data-theme-label>Switch to midnight mode</span>
+          <span class="sr-only" data-theme-state>Paper</span>
+        </button>
+        <button class="mobile-toggle" type="button" data-menu-toggle aria-controls="site-rail" aria-expanded="false">
+          <span class="mobile-toggle__bars" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="site-rail" id="site-rail">
+      <div class="rail-inner">
+        <a class="brandmark" href="index.html">
+          <span class="brandmark__name">Sarwin Chandran</span>
+          <span class="brandmark__tag">Discover Me</span>
+        </a>
+
+        <p class="rail-summary">Captures keeps night-sky frames, observation notes, and visual memory in the same place.</p>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="physics.html">Physics</a>
+          <a href="codes.html">Code</a>
+          <a href="artworks.html">Art</a>
+          <a href="captures.html">Captures</a>
+          <a href="creatives.html">Creatives</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span data-theme-label>Switch to midnight mode</span>
+          <span class="theme-toggle__status">
+            <span class="theme-toggle__dot" aria-hidden="true"></span>
+            <span data-theme-state>Paper</span>
+          </span>
+        </button>
+      </div>
+    </aside>
+
+    <button class="drawer-scrim" type="button" data-drawer-close aria-label="Close navigation"></button>
+
+    <main class="site-main" id="main">
+      <article class="page">
+        <section class="section" id="overview" data-reveal>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Captures</span>
+              <h1 class="hero-title">Frames, observations, and visual captures that keep the light, the place, and the patience <em>in the same memory.</em></h1>
+              <p class="lead">This page is for recorded seeing. The image matters, but so does where it was taken, what the conditions were, and what made the frame worth keeping.</p>
+              <div class="chip-row">
+                <span class="chip">Night sky</span>
+                <span class="chip">Observation notes</span>
+                <span class="chip">Processed frames</span>
+              </div>
+              <div class="button-row">
+                <a class="button-primary" href="#frames">Open the frames</a>
+                <a class="button-secondary" href="#sessions">Read session notes</a>
+                <a class="button-ghost" href="artworks.html">Open Art</a>
+              </div>
+            </div>
+
+            <div class="hero-side">
+              <figure class="snapshot">
+                <div class="hero-frame">
+                  <img src="img/slide_3.jpg" alt="Night sky preview from Sarwin's captures page" loading="eager">
+                </div>
+                <figcaption>The image becomes stronger once the page keeps the conditions around it intact.</figcaption>
+              </figure>
+
+              <section class="table-card">
+                <span class="panel-label">A useful capture page keeps</span>
+                <dl>
+                  <div>
+                    <dt>Conditions</dt>
+                    <dd>Date, location, weather, and whatever nearly ruined the session.</dd>
+                  </div>
+                  <div>
+                    <dt>Frame</dt>
+                    <dd>The visual that survived the waiting, setup, and adjustments.</dd>
+                  </div>
+                  <div>
+                    <dt>Aftermath</dt>
+                    <dd>The processing choices that clarified the image without erasing the atmosphere.</dd>
+                  </div>
+                </dl>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <nav class="page-nav section" aria-label="On this page" data-page-nav data-reveal>
+          <a href="#overview">Overview</a>
+          <a href="#frames">Frames</a>
+          <a href="#sessions">Sessions</a>
+          <a href="#notes">Notes</a>
+        </nav>
+
+        <section class="section" id="frames" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Selected frames</span>
+            <h2 class="section-title">Images that should carry their own memory, not just an export date.</h2>
+          </header>
+
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_1.jpg" data-alt="Wide sky frame from Sarwin's captures page" data-title="Wide sky frame" data-description="A broad sky image that remembers the whole session, not only the stars.">
+                <div class="gallery-card__frame">
+                  <img src="img/portfolio_1.jpg" alt="Wide sky frame preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Night frame</span>
+                  <h3 class="card-title">Wide sky frame</h3>
+                  <p>A record of darkness, patience, and a location that felt worth returning to.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_2.jpg" data-alt="Lunar detail test from Sarwin's captures page" data-title="Lunar detail test" data-description="A frame worth keeping because the setup, crop, and final detail all mattered.">
+                <div class="gallery-card__frame">
+                  <img src="img/portfolio_2.jpg" alt="Lunar detail test preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Moon study</span>
+                  <h3 class="card-title">Lunar detail test</h3>
+                  <p>Technical enough to be careful about, visual enough to remember as a night in its own right.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_3.jpg" data-alt="Constellation pass from Sarwin's captures page" data-title="Constellation pass" data-description="Tracking, timing, and the gap between what the eye saw and what the sensor finally earned.">
+                <div class="gallery-card__frame">
+                  <img src="img/portfolio_3.jpg" alt="Constellation pass preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Constellation</span>
+                  <h3 class="card-title">Constellation pass</h3>
+                  <p>The notes around the frame are half of why it matters.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_4.jpg" data-alt="Field exposure from Sarwin's captures page" data-title="Field exposure" data-description="A long-exposure frame where site choice, patience, and one late adjustment changed the result.">
+                <div class="gallery-card__frame">
+                  <img src="img/portfolio_4.jpg" alt="Field exposure preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Long exposure</span>
+                  <h3 class="card-title">Field exposure</h3>
+                  <p>Sometimes the strongest frame is the one that almost never happened.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_5.jpg" data-alt="Processed stack from Sarwin's captures page" data-title="Processed stack" data-description="A frame for documenting processing choices, color discipline, and what still felt slightly too pushed.">
+                <div class="gallery-card__frame">
+                  <img src="img/portfolio_5.jpg" alt="Processed stack preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Processed stack</span>
+                  <h3 class="card-title">Processed stack</h3>
+                  <p>The workflow around the image is part of the capture, not a separate afterthought.</p>
+                </div>
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="sessions" data-reveal>
+          <div class="split-grid">
+            <section class="story-card panel--accent">
+              <span class="panel-label">Session log</span>
+              <ul class="timeline">
+                <li class="timeline-item">
+                  <span class="timeline-date mono-data">11 Mar 2026</span>
+                  <div class="timeline-body">
+                    <strong>The sky stayed still just long enough for the final stack to feel earned.</strong>
+                    <p>The page is stronger because it remembers the timing, the retry, and the conditions, not only the export.</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <span class="timeline-date mono-data">06 Mar 2026</span>
+                  <div class="timeline-body">
+                    <strong>Clouds interrupted the first pass, but the site notes were still worth saving.</strong>
+                    <p>Sometimes a session entry is useful because it prevents you from repeating the same mistake later.</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <span class="timeline-date mono-data">01 Mar 2026</span>
+                  <div class="timeline-body">
+                    <strong>Processing notes finally preserved the night instead of polishing it away.</strong>
+                    <p>The better version came from restraint, not from adding more treatment.</p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+            <section class="table-card">
+              <span class="panel-label">Three things worth remembering</span>
+              <dl>
+                <div>
+                  <dt>Site memory</dt>
+                  <dd>Travel time, local light, and when the sky was most stable.</dd>
+                </div>
+                <div>
+                  <dt>Capture discipline</dt>
+                  <dd>Which settings preserved detail without flattening the scene.</dd>
+                </div>
+                <div>
+                  <dt>Processing restraint</dt>
+                  <dd>Enough to clarify the frame, not so much that it stops feeling like the original night.</dd>
+                </div>
+              </dl>
+            </section>
+          </div>
+        </section>
+
+        <section class="section" id="notes" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Observation notes</span>
+            <h2 class="section-title">The page becomes useful once it remembers the place, the setup, and the decision that saved the capture.</h2>
+          </header>
+
+          <div class="entry-grid">
+            <article class="entry-card">
+              <div class="entry-card__body">
+                <span class="entry-card__status">Site note</span>
+                <h3 class="entry-title">What a location entry should preserve</h3>
+                <p class="entry-copy">Travel time, seasonal conditions, light pollution, and what to bring next time so the session starts better.</p>
+              </div>
+            </article>
+
+            <article class="entry-card">
+              <div class="entry-card__body">
+                <span class="entry-card__status">Gear note</span>
+                <h3 class="entry-title">Equipment pages are better when they are honest</h3>
+                <p class="entry-copy">Not just what the setup can do, but where it becomes slow, awkward, or unreliable in real conditions.</p>
+              </div>
+            </article>
+
+            <article class="entry-card">
+              <div class="entry-card__body">
+                <span class="entry-card__status">Processing note</span>
+                <h3 class="entry-title">The final image should still feel like the original atmosphere</h3>
+                <p class="entry-copy">The strongest page says where processing helped and where it almost erased what made the capture special.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span>&copy; <span data-year></span> Sarwin Chandran. Captures.</span>
+          <a href="#overview">Back to top</a>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <div class="viewer" data-viewer aria-hidden="true">
+    <div class="viewer__panel">
+      <div class="viewer__header">
+        <div>
+          <h2 data-viewer-title>Capture</h2>
+          <p data-viewer-description></p>
+        </div>
+        <button class="viewer__close" type="button" data-viewer-close aria-label="Close image viewer">Close</button>
+      </div>
+      <div class="viewer__body">
+        <img data-viewer-image src="img/portfolio_big_1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

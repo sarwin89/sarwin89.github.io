@@ -1,566 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sarwin Chandran | Portfolio, Experiments, and Blog</title>
-    <meta name="description" content="Official personal website of Sarwin Chandran featuring code and simulations, artwork, astrophotography, poetry, music, and blog updates.">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="preload" as="image" href="img/slide_1.png">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/fontAwesome.css">
-    <link rel="stylesheet" href="css/light-box.css">
-    <link rel="stylesheet" href="css/owl-carousel.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <link rel="stylesheet" href="css/custom-style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sarwin Chandran | Discover Me</title>
+  <meta name="description" content="Discover Sarwin Chandran through Physics, Code, Art, Captures, Creatives, and Blog notes in one responsive multi-page portfolio.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      var stored = window.localStorage.getItem("sarwinTheme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom-style.css">
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-    <header class="nav-down responsive-nav hidden-lg hidden-md">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="mobile-bar">
+      <a class="mobile-brand" href="index.html">
+        <strong>Sarwin Chandran</strong>
+        <span>Discover Me</span>
+      </a>
+      <div class="mobile-actions">
+        <button class="mobile-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="sr-only" data-theme-label>Switch to midnight mode</span>
+          <span class="sr-only" data-theme-state>Paper</span>
         </button>
-        <div id="main-nav" class="collapse navbar-collapse">
-            <nav>
-                <ul class="nav navbar-nav">
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#hub">Explore</a></li>
-                    <li><a href="#codes">Code</a></li>
-                    <li><a href="#art">Art</a></li>
-                    <li><a href="#astro">Astro</a></li>
-                    <li><a href="#poetry">Poetry</a></li>
-                    <li><a href="#music">Music</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <button class="mobile-toggle" type="button" data-menu-toggle aria-controls="site-rail" aria-expanded="false">
+          <span class="mobile-toggle__bars" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
     </header>
 
-    <div class="sidebar-navigation hidde-sm hidden-xs">
-        <div class="logo">
-            <a href="#top">Sar<em>win</em></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#top"><span class="rect"></span><span class="circle"></span>Home</a></li>
-                <li><a href="#about"><span class="rect"></span><span class="circle"></span>About</a></li>
-                <li><a href="#hub"><span class="rect"></span><span class="circle"></span>Explore</a></li>
-                <li><a href="#codes"><span class="rect"></span><span class="circle"></span>Code</a></li>
-                <li><a href="#art"><span class="rect"></span><span class="circle"></span>Artworks</a></li>
-                <li><a href="#astro"><span class="rect"></span><span class="circle"></span>Astro</a></li>
-                <li><a href="#poetry"><span class="rect"></span><span class="circle"></span>Poetry</a></li>
-                <li><a href="#music"><span class="rect"></span><span class="circle"></span>Music</a></li>
-                <li><a href="#blog"><span class="rect"></span><span class="circle"></span>Blog</a></li>
-                <li><a href="#contact"><span class="rect"></span><span class="circle"></span>Contact</a></li>
-            </ul>
+    <aside class="site-rail" id="site-rail">
+      <div class="rail-inner">
+        <a class="brandmark" href="index.html">
+          <span class="brandmark__name">Sarwin Chandran</span>
+          <span class="brandmark__tag">Discover Me</span>
+        </a>
+
+        <p class="rail-summary">One place to move through research, software, images, captures, creative fragments, and long-form notes.</p>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="physics.html">Physics</a>
+          <a href="codes.html">Code</a>
+          <a href="artworks.html">Art</a>
+          <a href="captures.html">Captures</a>
+          <a href="creatives.html">Creatives</a>
+          <a href="blog.html">Blog</a>
         </nav>
-        <ul class="social-icons">
-            <li><a href="https://github.com/sarwin89" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a></li>
-            <li><a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa fa-twitter"></i></a></li>
-        </ul>
-    </div>
 
-    <div class="slider">
-        <div class="Modern-Slider content-section" id="top">
-            <div class="item item-1">
-                <div class="img-fill">
-                    <div class="image"></div>
-                    <div class="info">
-                        <h1>Hi, I am Sarwin.<br>I Build Between Science and Art.</h1>
-                        <p>This is my corner of the internet where code, simulations, artworks, astrophotography, poetry, and music all live together.</p>
-                        <div class="white-button button">
-                            <a href="#about">Start Here</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item item-2">
-                <div class="img-fill">
-                    <div class="image"></div>
-                    <div class="info">
-                        <div>
-                            <h1>One Index.<br>Two Ways to Explore.</h1>
-                            <p>Use one smart Explore button: jump quickly through sections or switch mode to open each full dedicated page.</p>
-                            <div class="white-button button">
-                                <a href="#hub">Explore the Sections</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item item-3">
-                <div class="img-fill">
-                    <div class="image"></div>
-                    <div class="info">
-                        <div>
-                            <h1>Project Notes,<br>Not Just Highlights</h1>
-                            <p>I use this as a living logbook, sharing wins, mistakes, experiments, and what I learned while building in public.</p>
-                            <div class="white-button button">
-                                <a href="#blog">Read the Blog</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span data-theme-label>Switch to midnight mode</span>
+          <span class="theme-toggle__status">
+            <span class="theme-toggle__dot" aria-hidden="true"></span>
+            <span data-theme-state>Paper</span>
+          </span>
+        </button>
+      </div>
+    </aside>
 
-    <div class="page-content">
-        <section id="about" class="content-section">
-            <div class="wide-section intro-section">
-                <div class="section-heading">
-                    <h1>About<br><em>Me</em></h1>
-                    <p>I am a curious builder who likes mixing analysis with imagination.</p>
-                </div>
-                <div class="intro-grid">
-                    <div class="intro-panel">
-                        <p>I am Sarwin Chandran, and this site is where I document both the work and the thinking behind it. Some days it is simulation-heavy, some days it is sketchbook-heavy, and sometimes both happen in the same night.</p>
-                        <p>Instead of splitting my interests into separate identities, I wanted one honest home that shows how they feed each other: technical depth, visual storytelling, and reflective writing.</p>
-                        <ul class="intro-facts">
-                            <li>Focus: computational physics, visual storytelling, and creative experimentation</li>
-                            <li>Current mission: ship projects consistently and document each phase in public</li>
-                            <li>Home base: this portfolio plus blog on GitHub Pages</li>
-                        </ul>
-                    </div>
-                    <div class="intro-panel social-panel">
-                        <h3>Find Me Online</h3>
-                        <a href="https://github.com/sarwin89" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
-                        <a href="mailto:hello@sarwin.in">Email</a>
-                        <p class="social-note">Share your profile links and I will wire your exact handles in the next update.</p>
-                    </div>
-                </div>
+    <button class="drawer-scrim" type="button" data-drawer-close aria-label="Close navigation"></button>
+
+    <main class="site-main" id="main">
+      <article class="page">
+        <section class="section" data-reveal>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Discover Me</span>
+              <h1 class="hero-title">Physics, code, art, captures, creatives, and blog notes arranged so you can <em>actually get to know the work.</em></h1>
+              <p class="lead">This homepage is a guided way into the portfolio. Instead of flattening everything into one generic reel, it opens six different rooms that show how technical rigor, visual practice, and personal reflection connect.</p>
+              <p class="support">It is still personal, but it is clearer now: professors can read it academically, collaborators can scan it quickly, and curious visitors can move by interest.</p>
+              <div class="chip-row" aria-label="Identity tags">
+                <span class="chip">Physicist</span>
+                <span class="chip">Programmer</span>
+                <span class="chip">Artist</span>
+                <span class="chip">Documenting everything</span>
+              </div>
+              <div class="button-row">
+                <a class="button-primary" href="#rooms">Explore the pages</a>
+                <a class="button-secondary" href="blog.html">Read the blog</a>
+                <a class="button-ghost" href="physics.html">Start with Physics</a>
+              </div>
             </div>
+
+            <div class="hero-side">
+              <section class="panel panel--accent orbit-panel" aria-label="Portfolio coordinates">
+                <span class="panel-label">Portfolio coordinates</span>
+                <div class="signal-grid">
+                  <div class="signal">
+                    <span>Best for</span>
+                    <strong>Professors, collaborators, and anyone who wants the process as much as the result.</strong>
+                  </div>
+                  <div class="signal">
+                    <span>Structure</span>
+                    <strong>Six focused pages with one shared visual language.</strong>
+                  </div>
+                </div>
+                <div class="orbit-field" aria-hidden="true">
+                  <span class="orbit-ring"></span>
+                  <span class="orbit-core"></span>
+                  <span class="orbit-point orbit-point--one"></span>
+                  <span class="orbit-point orbit-point--two"></span>
+                  <span class="orbit-point orbit-point--three"></span>
+                  <div class="orbit-notes">
+                    <span>question</span>
+                    <span>build</span>
+                    <span>reflect</span>
+                  </div>
+                </div>
+              </section>
+
+              <div class="media-pair">
+                <figure class="snapshot">
+                  <div class="figure-frame">
+                    <img src="img/featured_2.jpg" alt="Physics and modeling preview from Sarwin's portfolio" loading="eager">
+                  </div>
+                  <figcaption>Research, modeling, and code now have separate but related space.</figcaption>
+                </figure>
+                <figure class="snapshot">
+                  <div class="figure-frame">
+                    <img src="img/Art/Prime.jpg" alt="Art preview from Sarwin's portfolio" loading="lazy">
+                  </div>
+                  <figcaption>The visual pages stay personal without losing structure.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section id="hub" class="content-section">
-            <div class="wide-section hub-section">
-                <div class="section-heading">
-                    <h1>Website<br><em>Flow</em></h1>
-                    <p>This is the main index. Pick your mode below, then every Explore button follows that mode.</p>
+        <nav class="page-nav section" aria-label="On this page" data-page-nav data-reveal>
+          <a href="#why">Why this layout</a>
+          <a href="#rooms">Pages</a>
+          <a href="#selection">Highlights</a>
+          <a href="#journal">Recent notes</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <section class="section" id="why" data-reveal>
+          <div class="split-grid">
+            <section class="panel panel--accent">
+              <span class="panel-label">Why this layout works better</span>
+              <h2 class="panel-title">The portfolio makes more sense when each kind of work gets its own page and the homepage focuses on navigation rather than compression.</h2>
+              <div class="prose">
+                <p>That means Physics can stay analytical, Code can focus on tools and systems, Art can stay visual, Captures can stay observational, Creatives can mix poetry and music naturally, and Blog can keep the long-form thinking visible.</p>
+                <p>The result is simpler to browse and more consistent from page to page.</p>
+              </div>
+            </section>
+
+            <section class="table-card">
+              <span class="panel-label">Ground rules</span>
+              <dl>
+                <div>
+                  <dt>Different page, one palette</dt>
+                  <dd>Each page gets its own color family and keeps it consistent across cards, frames, and accents.</dd>
                 </div>
-                <div class="mode-dock" id="explore-mode-dock">
-                    <button class="mode-toggle" id="explore-mode-toggle" type="button" aria-pressed="false">
-                        <span class="mode-chip">Quick Jump Mode</span>
-                        <span class="mode-copy">Explore buttons will jump to sections on this page.</span>
-                    </button>
-                    <p class="mode-tip">Switch mode once, then all Explore buttons follow your choice.</p>
+                <div>
+                  <dt>Compact navigation</dt>
+                  <dd>The sidebar stays short enough to fit without forcing a scroll-heavy experience.</dd>
                 </div>
-                <div class="hub-grid">
-                    <article class="hub-card">
-                        <h3>Code and Simulations</h3>
-                        <p>Simulation experiments, dev logs, and tools I build while learning computational physics.</p>
-                        <div class="accent-button button smart-button-wrap"><a class="smart-explore" data-jump="#codes" data-full="codes.html" href="#codes">Explore This Track</a></div>
-                    </article>
-                    <article class="hub-card">
-                        <h3>Artworks</h3>
-                        <p>Character art, style studies, and pieces where I experiment with mood, color, and motion.</p>
-                        <div class="accent-button button smart-button-wrap"><a class="smart-explore" data-jump="#art" data-full="artworks.html" href="#art">Explore This Track</a></div>
-                    </article>
-                    <article class="hub-card">
-                        <h3>Astrophotography</h3>
-                        <p>Astro captures, session logs, and the quiet patience behind every usable night-sky frame.</p>
-                        <div class="accent-button button smart-button-wrap"><a class="smart-explore" data-jump="#astro" data-full="astrophotography.html" href="#astro">Explore This Track</a></div>
-                    </article>
-                    <article class="hub-card">
-                        <h3>Poetry</h3>
-                        <p>Short poems, unfinished lines, and the words that appear between technical work sessions.</p>
-                        <div class="accent-button button smart-button-wrap"><a class="smart-explore" data-jump="#poetry" data-full="poetry.html" href="#poetry">Explore This Track</a></div>
-                    </article>
-                    <article class="hub-card">
-                        <h3>Music</h3>
-                        <p>Practice clips, composition notes, and sound experiments I return to over time.</p>
-                        <div class="accent-button button smart-button-wrap"><a class="smart-explore" data-jump="#music" data-full="music.html" href="#music">Explore This Track</a></div>
-                    </article>
-                    <article class="hub-card">
-                        <h3>Personal Blog</h3>
-                        <p>Honest behind-the-scenes writing: decisions I made, what failed, and what changed next.</p>
-                        <div class="accent-button button smart-button-wrap"><a class="smart-explore" data-jump="#blog" data-full="blog.html" href="#blog">Explore This Track</a></div>
-                    </article>
+                <div>
+                  <dt>Responsive first</dt>
+                  <dd>Smaller phones now get tighter media sizing and less visual bulk.</dd>
                 </div>
-            </div>
+              </dl>
+            </section>
+          </div>
         </section>
 
-        <section id="codes" class="content-section">
-            <div id="featured">
-                <div class="section-heading">
-                    <h1>Code and<br><em>Simulations</em></h1>
-                    <p>A few projects that represent how I think: prototype quickly, test honestly, and iterate with notes.</p>
-                </div>
-                <div class="section-content">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_1.jpg" alt="Simulation visualization with particle distribution" loading="lazy" decoding="async">
-                                <div class="featured-button button"><a href="codes.html">View Project Notes</a></div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Particle System Sandbox</h4>
-                                <span>Numerical Experiment</span>
-                                <p>A modular environment to test interactions, stability, and parameter sensitivity.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_2.jpg" alt="Data panel representing orbital simulation outputs" loading="lazy" decoding="async">
-                                <div class="featured-button button"><a href="codes.html">View Project Notes</a></div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Orbital Mechanics Visualizer</h4>
-                                <span>Physics and Visualization</span>
-                                <p>Interactive plots to inspect transfer orbits and motion behavior over time.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_3.jpg" alt="Graph and matrix output from numerical methods" loading="lazy" decoding="async">
-                                <div class="featured-button button"><a href="codes.html">View Project Notes</a></div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Numerical Methods Toolkit</h4>
-                                <span>Research Utility</span>
-                                <p>Reusable scripts for interpolation, differential solvers, and parameter sweeps.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_1.jpg" alt="Heat map style representation of simulation outcomes" loading="lazy" decoding="async">
-                                <div class="featured-button button"><a href="codes.html">View Project Notes</a></div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Chaos and Sensitivity Study</h4>
-                                <span>Dynamics</span>
-                                <p>Comparative runs that examine how small initial shifts impact long-term trajectories.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-cta accent-button button">
-                    <a href="codes.html">Open the Full Code and Simulation Page</a>
-                </div>
-            </div>
-        </section>
-        <section id="art" class="content-section">
-            <div id="projects">
-                <div class="section-heading">
-                    <h1>Artwork<br><em>Gallery</em></h1>
-                    <p>Artworks that helped me study movement, contrast, and character mood over time.</p>
-                </div>
-                <div class="section-content">
-                    <div class="masonry">
-                        <div class="row">
-                            <div class="item">
-                                <div class="col-md-8">
-                                    <a href="img/Art/Denji.jpg" data-lightbox="art-home"><img src="img/Art/Denji.jpg" alt="Denji anime artwork" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="img/Art/Maki.jpg" data-lightbox="art-home"><img src="img/Art/Maki.jpg" alt="Maki anime artwork" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="img/Art/Eren.jpg" data-lightbox="art-home"><img src="img/Art/Eren.jpg" alt="Eren artwork" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-8">
-                                    <a href="img/Art/Rengoku.jpg" data-lightbox="art-home"><img src="img/Art/Rengoku.jpg" alt="Rengoku artwork" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="img/Art/Anya.jpg" data-lightbox="art-home"><img src="img/Art/Anya.jpg" alt="Anya artwork" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="img/Art/Zenitsu.jpg" data-lightbox="art-home"><img src="img/Art/Zenitsu.jpg" alt="Zenitsu artwork" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="img/Art/Gojo.jpg" data-lightbox="art-home"><img src="img/Art/Gojo.jpg" alt="Gojo artwork" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-cta accent-button button">
-                    <a href="artworks.html">Open the Full Artworks Page</a>
-                </div>
-            </div>
+        <section class="section" id="rooms" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Pages</span>
+            <h2 class="section-title">Six focused pages, each tuned to a different part of the portfolio.</h2>
+          </header>
+
+          <div class="discipline-grid">
+            <article class="discipline-card discipline-card--wide">
+              <div class="figure-frame">
+                <img src="img/featured_1.jpg" alt="Physics page preview" loading="lazy">
+              </div>
+              <div class="discipline-card__body">
+                <span class="discipline-card__number">01 / Physics</span>
+                <h3 class="discipline-card__title">Models, dynamics, orbital thinking, and the notes that make physical intuition readable.</h3>
+                <p>This page tracks research-style questions, simulation logic, and what the plots actually reveal.</p>
+              </div>
+              <div class="discipline-card__footer">
+                <span class="tag">Research notebook</span>
+                <a class="link-inline" href="physics.html">Open Physics</a>
+              </div>
+            </article>
+
+            <article class="discipline-card discipline-card--wide">
+              <div class="figure-frame">
+                <img src="img/featured_3.jpg" alt="Code page preview" loading="lazy">
+              </div>
+              <div class="discipline-card__body">
+                <span class="discipline-card__number">02 / Code</span>
+                <h3 class="discipline-card__title">Software tools, interfaces, and reusable systems that support the rest of the work.</h3>
+                <p>This page is about implementation, tooling, and the practical side of building digital things that last.</p>
+              </div>
+              <div class="discipline-card__footer">
+                <span class="tag">Systems shelf</span>
+                <a class="link-inline" href="codes.html">Open Code</a>
+              </div>
+            </article>
+
+            <article class="discipline-card">
+              <div class="discipline-card__body">
+                <span class="discipline-card__number">03 / Art</span>
+                <h3 class="discipline-card__title">Finished pieces, studies, and visual decisions worth preserving.</h3>
+                <p>The art room keeps images and process notes close together.</p>
+              </div>
+              <div class="discipline-card__footer">
+                <span class="tag">Studio wall</span>
+                <a class="link-inline" href="artworks.html">Open Art</a>
+              </div>
+            </article>
+
+            <article class="discipline-card">
+              <div class="discipline-card__body">
+                <span class="discipline-card__number">04 / Captures</span>
+                <h3 class="discipline-card__title">Night-sky frames, observations, and visual captures with context.</h3>
+                <p>The image and the conditions around it live on the same page.</p>
+              </div>
+              <div class="discipline-card__footer">
+                <span class="tag">Observation shelf</span>
+                <a class="link-inline" href="captures.html">Open Captures</a>
+              </div>
+            </article>
+
+            <article class="discipline-card">
+              <div class="discipline-card__body">
+                <span class="discipline-card__number">05 / Creatives</span>
+                <h3 class="discipline-card__title">Poetry, lyrics, demos, and fragments that do not fit cleanly into one medium.</h3>
+                <p>This room holds the lighter, more hybrid side of the archive.</p>
+              </div>
+              <div class="discipline-card__footer">
+                <span class="tag">Cross-medium notes</span>
+                <a class="link-inline" href="creatives.html">Open Creatives</a>
+              </div>
+            </article>
+
+            <article class="discipline-card">
+              <div class="discipline-card__body">
+                <span class="discipline-card__number">06 / Blog</span>
+                <h3 class="discipline-card__title">Long-form posts that explain rebuilds, process, and what changed.</h3>
+                <p>When something needs full context, it belongs in the blog.</p>
+              </div>
+              <div class="discipline-card__footer">
+                <span class="tag">Long-form notes</span>
+                <a class="link-inline" href="blog.html">Open Blog</a>
+              </div>
+            </article>
+          </div>
         </section>
 
-        <section id="astro" class="content-section">
-            <div class="projects-block">
-                <div class="section-heading">
-                    <h1>Astro<br><em>Photography</em></h1>
-                    <p>Frames from nights spent testing patience, settings, and timing under imperfect skies.</p>
-                </div>
-                <div class="section-content">
-                    <div class="masonry">
-                        <div class="row">
-                            <div class="item">
-                                <div class="col-md-8">
-                                    <a href="img/portfolio_big_1.jpg" data-lightbox="astro-home"><img src="img/portfolio_1.jpg" alt="Night sky wide-angle frame" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                            <div class="item second-item">
-                                <div class="col-md-4">
-                                    <a href="img/portfolio_big_2.jpg" data-lightbox="astro-home"><img src="img/portfolio_2.jpg" alt="Moon detail frame" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="img/portfolio_big_3.jpg" data-lightbox="astro-home"><img src="img/portfolio_3.jpg" alt="Constellation long exposure frame" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-8">
-                                    <a href="img/portfolio_big_5.jpg" data-lightbox="astro-home"><img src="img/portfolio_5.jpg" alt="Stacked image for deep-sky observation" loading="lazy" decoding="async"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-cta accent-button button">
-                    <a href="astrophotography.html">Open the Full Astrophotography Page</a>
-                </div>
-            </div>
+        <section class="section" id="selection" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Highlights</span>
+            <h2 class="section-title">A few good entry points if you want the fastest route through the portfolio.</h2>
+          </header>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-card--wide">
+              <div class="figure-frame">
+                <img src="img/slide_1.png" alt="Physics and simulation highlight preview" loading="lazy">
+              </div>
+              <div class="feature-card__body">
+                <span class="card-kicker">Physics highlight</span>
+                <h3 class="feature-title">Start with the modeling page if you want the clearest look at how I reason through technical questions.</h3>
+                <p class="card-copy">It is the strongest place to see questions, methods, and corrections in one frame.</p>
+              </div>
+              <div class="feature-card__footer">
+                <span class="tag">Best academic entry point</span>
+                <a class="link-inline" href="physics.html#models">Open Physics models</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="figure-frame">
+                <img src="img/Art/Gojo.jpg" alt="Art highlight preview" loading="lazy">
+              </div>
+              <div class="feature-card__body">
+                <span class="card-kicker">Art highlight</span>
+                <h3 class="feature-title">The art room shows visual decision-making without turning the work into a silent gallery.</h3>
+                <p class="card-copy">Good if you want a more image-led route through the portfolio.</p>
+              </div>
+              <div class="feature-card__footer">
+                <span class="tag">Visual route</span>
+                <a class="link-inline" href="artworks.html#gallery">Open Art highlights</a>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="figure-frame">
+                <img src="img/portfolio_4.jpg" alt="Captures highlight preview" loading="lazy">
+              </div>
+              <div class="feature-card__body">
+                <span class="card-kicker">Captures highlight</span>
+                <h3 class="feature-title">Captures keeps visual observation grounded in place, patience, and timing.</h3>
+                <p class="card-copy">Useful when you want the observational side of the work, not just technical or studio pieces.</p>
+              </div>
+              <div class="feature-card__footer">
+                <span class="tag">Observation route</span>
+                <a class="link-inline" href="captures.html#frames">Open Captures</a>
+              </div>
+            </article>
+          </div>
         </section>
 
-        <section id="poetry" class="content-section">
-            <div class="wide-section poetry-section">
-                <div class="section-heading">
-                    <h1>Poetry<br><em>Desk</em></h1>
-                    <p>Short pieces I keep returning to when I need clarity, quiet, or momentum.</p>
-                </div>
-                <div class="poem-grid">
-                    <article class="poem-card">
-                        <h4>Orbit</h4>
-                        <p>I keep circling old questions, hoping one revolution later they turn into answers.</p>
-                    </article>
-                    <article class="poem-card">
-                        <h4>After Midnight</h4>
-                        <p>Streetlights blur into constellations when you are walking with unfinished songs.</p>
-                    </article>
-                    <article class="poem-card">
-                        <h4>Simulation Log</h4>
-                        <p>Some variables are numbers. Some variables are courage. Both need tuning.</p>
-                    </article>
-                </div>
-                <div class="section-cta accent-button button">
-                    <a href="poetry.html">Open the Full Poetry Page</a>
-                </div>
-            </div>
+        <section class="section" id="journal" data-reveal>
+          <div class="story-grid">
+            <article class="story-card panel--accent">
+              <span class="panel-label">Recent notes</span>
+              <h2 class="panel-title">The portfolio keeps moving, so the notes matter almost as much as the polished pages.</h2>
+              <ul class="timeline">
+                <li class="timeline-item">
+                  <span class="timeline-date mono-data">18 Mar 2026</span>
+                  <div class="timeline-body">
+                    <strong>Reframed the site around Discover Me and a clearer six-page structure.</strong>
+                    <p>The new layout makes the navigation easier to understand and keeps the visual language more consistent from room to room.</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <span class="timeline-date mono-data">14 Mar 2026</span>
+                  <div class="timeline-body">
+                    <strong>Logged another modeling pass after the constraints started behaving honestly.</strong>
+                    <p>The useful version of a project often starts when the model stops making itself look prettier than it is.</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <span class="timeline-date mono-data">11 Mar 2026</span>
+                  <div class="timeline-body">
+                    <strong>Kept a capture note instead of only saving the final frame.</strong>
+                    <p>The context around the image often becomes the most valuable part later.</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="quote-card">
+              <span class="panel-label">How to browse it</span>
+              <p class="quote">If you want the academic route, try <em>Physics -> Code -> Blog.</em></p>
+              <div class="prose">
+                <p>If you want the broader picture, move through Art, Captures, and Creatives afterward. That route shows how the technical and personal sides of the work keep informing each other.</p>
+              </div>
+            </article>
+          </div>
         </section>
 
-        <section id="music" class="content-section">
-            <div id="video" class="content-section">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <h1>Music and<br><em>Sound</em></h1>
-                            <p>Rough ideas, cover snippets, and sessions where I learn by recording and refining.</p>
-                        </div>
-                        <div class="text-content">
-                            <p>Music gives me a different kind of problem-solving. I track each session so you can hear how small changes slowly become complete pieces.</p>
-                        </div>
-                        <div class="accent-button button">
-                            <a href="music.html">Open the Full Music Page</a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="box-video">
-                            <div class="bg-video" style="background-image: url(img/slide_2.jpg);">
-                                <div class="bt-play">Play</div>
-                            </div>
-                            <div class="video-container">
-                                <iframe width="100%" height="520" src="https://www.youtube.com/embed/j-_7Ub-Zkow?rel=0&amp;showinfo=0" title="Music and process video" frameborder="0" allowfullscreen="allowfullscreen" loading="lazy"></iframe>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section" id="contact" data-reveal>
+          <div class="contact-grid">
+            <section class="panel panel--accent">
+              <span class="panel-label">Contact</span>
+              <h2 class="panel-title">GitHub is still the easiest public doorway, and the pages themselves should already do most of the introduction work.</h2>
+              <div class="prose">
+                <p>The portfolio is meant to show how I think across different mediums, not just what I finished. If you want to continue the conversation, GitHub is the most reliable public link right now.</p>
+              </div>
+              <div class="button-row">
+                <a class="button-primary" href="https://github.com/sarwin89" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+                <a class="button-secondary" href="blog.html">Read the Blog</a>
+              </div>
+            </section>
+
+            <section class="table-card">
+              <span class="panel-label">Portfolio summary</span>
+              <dl>
+                <div>
+                  <dt>Main audiences</dt>
+                  <dd>Professors, collaborators, and anyone who wants a more complete picture than a standard portfolio provides.</dd>
                 </div>
-            </div>
-        </section>
-        <section id="blog" class="content-section">
-            <div class="section-heading">
-                <h1>Blog<br><em>Entries</em></h1>
-                <p>Posts that read like lab notes: what I tried, what surprised me, and what I plan next.</p>
-            </div>
-            <div class="section-content">
-                <div class="tabs-content">
-                    <div class="wrapper">
-                        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                            <li><a href="#tab1" class="active">Latest</a></li>
-                            <li><a href="#tab2">Code</a></li>
-                            <li><a href="#tab3">Creative</a></li>
-                            <li><a href="#tab4">Archive</a></li>
-                        </ul>
-                        <section id="first-tab-group" class="tabgroup">
-                            <div id="tab1">
-                                <ul>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_1.jpg" alt="Blog cover image for portfolio architecture" loading="lazy" decoding="async">
-                                            <div class="text-content">
-                                                <h4>Designing My Portfolio as a Living System</h4>
-                                                <span>10 March 2026</span>
-                                                <p>How I restructured this website into a connected hub with dedicated pages for each discipline.</p>
-                                                <div class="accent-button button"><a href="blog.html#living-system">Read on Blog Page</a></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_2.jpg" alt="Blog cover image for simulation workflow" loading="lazy" decoding="async">
-                                            <div class="text-content">
-                                                <h4>What Broke in My Simulation Workflow and Why</h4>
-                                                <span>5 March 2026</span>
-                                                <p>A practical review of assumptions, errors, and fixes while iterating on computational models.</p>
-                                                <div class="accent-button button"><a href="blog.html#simulation-workflow">Read on Blog Page</a></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="tab2">
-                                <ul>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_3.jpg" alt="Blog cover image for performance tuning" loading="lazy" decoding="async">
-                                            <div class="text-content">
-                                                <h4>Performance Tuning a Python Prototype</h4>
-                                                <span>28 February 2026</span>
-                                                <p>Small profiling steps that gave meaningful speed improvements without hurting readability.</p>
-                                                <div class="accent-button button"><a href="blog.html#python-prototype">Read on Blog Page</a></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_1.jpg" alt="Blog cover image for plotting pipeline" loading="lazy" decoding="async">
-                                            <div class="text-content">
-                                                <h4>Building a Cleaner Plotting Pipeline</h4>
-                                                <span>19 February 2026</span>
-                                                <p>A reusable charting pipeline that keeps experiments readable and easier to compare over time.</p>
-                                                <div class="accent-button button"><a href="blog.html#plotting-pipeline">Read on Blog Page</a></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="tab3">
-                                <ul>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_2.jpg" alt="Blog cover image for art workflow" loading="lazy" decoding="async">
-                                            <div class="text-content">
-                                                <h4>From Sketch to Final Render: My Art Flow</h4>
-                                                <span>14 February 2026</span>
-                                                <p>A short walkthrough of the process I use for digital character illustrations.</p>
-                                                <div class="accent-button button"><a href="blog.html#art-flow">Read on Blog Page</a></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_3.jpg" alt="Blog cover image for drafting poems" loading="lazy" decoding="async">
-                                            <div class="text-content">
-                                                <h4>Drafting Poems Between Projects</h4>
-                                                <span>2 February 2026</span>
-                                                <p>Why short poetry sessions help me reset between long technical work blocks.</p>
-                                                <div class="accent-button button"><a href="blog.html#drafting-poems">Read on Blog Page</a></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="tab4">
-                                <ul>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_1.jpg" alt="Blog cover image for archive post" loading="lazy" decoding="async">
-                                            <div class="text-content">
-                                                <h4>Portfolio Reboot Notes</h4>
-                                                <span>January 2026</span>
-                                                <p>A checkpoint post on where this site started and where I wanted to take it.</p>
-                                                <div class="accent-button button"><a href="blog.html#portfolio-reboot">Read on Blog Page</a></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
+                <div>
+                  <dt>Page set</dt>
+                  <dd>Physics, Code, Art, Captures, Creatives, and Blog.</dd>
                 </div>
-                <div class="section-cta white-button button"><a href="blog.html">Open the Full Blog Page</a></div>
-            </div>
+                <div>
+                  <dt>Visual direction</dt>
+                  <dd>Consistent page-specific color families, smaller mobile media, and a simpler navigation rhythm.</dd>
+                </div>
+              </dl>
+            </section>
+          </div>
         </section>
 
-        <section id="contact" class="content-section">
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.2351418567175!2d77.60918383856017!3d13.069354196813771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae18d75e9de9d9%3A0xe2c1bdbdc2918d09!2sJawaharlal%20Nehru%20Centre%20For%20Advanced%20Scientific%20Research!5e0!3m2!1sen!2sin!4v1736830023545!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div id="contact-content">
-                <div class="section-heading">
-                    <h1>Let us<br><em>Connect</em></h1>
-                    <p>If something here resonates with you, send me a message. I am always open to thoughtful collaborations.</p>
-                </div>
-                <div class="section-content">
-                    <form id="contact" action="#" method="post">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <fieldset><input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required=""></fieldset>
-                            </div>
-                            <div class="col-md-4">
-                                <fieldset><input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required=""></fieldset>
-                            </div>
-                            <div class="col-md-4">
-                                <fieldset><input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required=""></fieldset>
-                            </div>
-                            <div class="col-md-12">
-                                <fieldset><textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea></fieldset>
-                            </div>
-                            <div class="col-md-12">
-                                <fieldset><button type="submit" id="form-submit" class="btn">Send Message</button></fieldset>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p>&copy; 2026 Sarwin Chandran. Built with code, curiosity, and creative discipline.</p>
+        <footer class="page-footer">
+          <span>&copy; <span data-year></span> Sarwin Chandran. Discover Me.</span>
+          <a href="#main">Back to top</a>
         </footer>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+      </article>
+    </main>
+  </div>
 </body>
 </html>
-
-
-
-
