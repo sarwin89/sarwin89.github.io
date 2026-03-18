@@ -1,123 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Artworks | Sarwin Chandran</title>
-    <meta name="description" content="Dedicated page for Sarwin Chandran's artwork collection.">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/fontAwesome.css">
-    <link rel="stylesheet" href="css/light-box.css">
-    <link rel="stylesheet" href="css/owl-carousel.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <link rel="stylesheet" href="css/custom-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Art Archive | Sarwin Chandran</title>
+  <meta name="description" content="Art page of Sarwin Chandran with finished pieces, process notes, and ideas for future series.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      var stored = window.localStorage.getItem("sarwinTheme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom-style.css">
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-    <header class="nav-down responsive-nav hidden-lg hidden-md">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<body class="page-artworks">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="mobile-bar">
+      <a class="mobile-brand" href="index.html">
+        <strong>Sarwin Chandran</strong>
+        <span>Discover Me</span>
+      </a>
+      <div class="mobile-actions">
+        <button class="mobile-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="sr-only" data-theme-label>Switch to midnight mode</span>
+          <span class="sr-only" data-theme-state>Paper</span>
         </button>
-        <div id="main-nav" class="collapse navbar-collapse">
-            <nav>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="codes.html">Code</a></li>
-                    <li><a href="artworks.html">Artworks</a></li>
-                    <li><a href="astrophotography.html">Astro</a></li>
-                    <li><a href="poetry.html">Poetry</a></li>
-                    <li><a href="music.html">Music</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
-        </div>
+        <button class="mobile-toggle" type="button" data-menu-toggle aria-controls="site-rail" aria-expanded="false">
+          <span class="mobile-toggle__bars" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
     </header>
 
-    <div class="sidebar-navigation hidde-sm hidden-xs">
-        <div class="logo"><a href="index.html">Sar<em>win</em></a></div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><span class="rect"></span><span class="circle"></span>Home Hub</a></li>
-                <li><a href="codes.html"><span class="rect"></span><span class="circle"></span>Code</a></li>
-                <li><a href="artworks.html"><span class="rect"></span><span class="circle"></span>Artworks</a></li>
-                <li><a href="astrophotography.html"><span class="rect"></span><span class="circle"></span>Astrophotography</a></li>
-                <li><a href="poetry.html"><span class="rect"></span><span class="circle"></span>Poetry</a></li>
-                <li><a href="music.html"><span class="rect"></span><span class="circle"></span>Music</a></li>
-                <li><a href="blog.html"><span class="rect"></span><span class="circle"></span>Blog</a></li>
-            </ul>
+    <aside class="site-rail" id="site-rail">
+      <div class="rail-inner">
+        <a class="brandmark" href="index.html">
+          <span class="brandmark__name">Sarwin Chandran</span>
+          <span class="brandmark__tag">Discover Me</span>
+        </a>
+        <p class="rail-summary">The Art page keeps finished pieces, studies, and visual decisions in one place without losing the process around them.</p>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="physics.html">Physics</a>
+          <a href="codes.html">Code</a>
+          <a href="artworks.html">Art</a>
+          <a href="captures.html">Captures</a>
+          <a href="creatives.html">Creatives</a>
+          <a href="blog.html">Blog</a>
         </nav>
-        <ul class="social-icons">
-            <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.behance.net" target="_blank" rel="noopener noreferrer"><i class="fa fa-behance"></i></a></li>
-            <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play"></i></a></li>
-        </ul>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span data-theme-label>Switch to midnight mode</span>
+          <span class="theme-toggle__status">
+            <span class="theme-toggle__dot" aria-hidden="true"></span>
+            <span data-theme-state>Paper</span>
+          </span>
+        </button>
+      </div>
+    </aside>
+
+    <button class="drawer-scrim" type="button" data-drawer-close aria-label="Close navigation"></button>
+
+    <main class="site-main" id="main">
+      <article class="page">
+        <section class="section" id="overview" data-reveal>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Art</span>
+              <h1 class="hero-title">Finished pieces, studies, and visual notes that explain <em>what changed between sketch and final.</em></h1>
+              <p class="lead">I wanted the art room to feel more like a chosen wall than a feed. The image matters, but so does the reason it worked: lighting, silhouette, restraint, gesture, or color.</p>
+              <div class="chip-row">
+                <span class="chip">Character work</span>
+                <span class="chip">Color studies</span>
+                <span class="chip">Process notes</span>
+              </div>
+              <div class="button-row">
+                <a class="button-primary" href="#gallery">Open the gallery</a>
+                <a class="button-secondary" href="#process">Read the process notes</a>
+                <a class="button-ghost" href="index.html">Back to home</a>
+              </div>
+            </div>
+
+            <div class="hero-side">
+              <figure class="snapshot">
+                <div class="hero-frame">
+                  <img src="img/Art/Prime.jpg" alt="Prime artwork by Sarwin Chandran" loading="eager">
+                </div>
+                <figcaption>A useful art page keeps the visual impact and the decision-making in the same frame.</figcaption>
+              </figure>
+
+              <section class="table-card">
+                <span class="panel-label">What I try to keep beside a piece</span>
+                <dl>
+                  <div>
+                    <dt>Intent</dt>
+                    <dd>What the image was trying to do emotionally or visually.</dd>
+                  </div>
+                  <div>
+                    <dt>Change</dt>
+                    <dd>The one adjustment that made the piece stronger than the sketch.</dd>
+                  </div>
+                  <div>
+                    <dt>Lesson</dt>
+                    <dd>What I would carry into the next drawing instead of relearning it.</dd>
+                  </div>
+                </dl>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <nav class="page-nav section" aria-label="On this page" data-page-nav data-reveal>
+          <a href="#overview">Overview</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#process">Process</a>
+          <a href="#series">Series seeds</a>
+        </nav>
+
+        <section class="section" id="gallery" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Gallery wall</span>
+            <h2 class="section-title">Images that deserve a stronger home than a folder and enough notes to remember why they worked.</h2>
+          </header>
+
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/Art/Prime.jpg" data-alt="Prime artwork by Sarwin Chandran" data-title="Prime" data-description="A piece about restraint, clean finish, and trusting the composition enough to stop adding.">
+                <div class="gallery-card__frame">
+                  <img src="img/Art/Prime.jpg" alt="Prime artwork preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Finished piece</span>
+                  <h3 class="card-title">Prime</h3>
+                  <p>The kind of drawing that teaches patience rather than speed.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/Art/Rengoku.jpg" data-alt="Rengoku artwork by Sarwin Chandran" data-title="Rengoku" data-description="Strong color and stronger energy, with palette doing as much emotional work as line.">
+                <div class="gallery-card__frame">
+                  <img src="img/Art/Rengoku.jpg" alt="Rengoku artwork preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Color-driven piece</span>
+                  <h3 class="card-title">Rengoku</h3>
+                  <p>Useful for studying how lighting can carry the whole mood.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/Art/Gojo.jpg" data-alt="Gojo artwork by Sarwin Chandran" data-title="Gojo" data-description="A style-forward piece focused on silhouette control and knowing exactly how much detail was enough.">
+                <div class="gallery-card__frame">
+                  <img src="img/Art/Gojo.jpg" alt="Gojo artwork preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Character study</span>
+                  <h3 class="card-title">Gojo</h3>
+                  <p>Where detail only mattered when it helped the silhouette read faster.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/Art/Maki.jpg" data-alt="Maki artwork by Sarwin Chandran" data-title="Maki" data-description="A study in balancing pose, gesture, and finish without losing the life of the sketch.">
+                <div class="gallery-card__frame">
+                  <img src="img/Art/Maki.jpg" alt="Maki artwork preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Pose study</span>
+                  <h3 class="card-title">Maki</h3>
+                  <p>The piece that made pressure, shape language, and body balance easier to talk about.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/Art/Zenitsu.jpg" data-alt="Zenitsu artwork by Sarwin Chandran" data-title="Zenitsu" data-description="A more energetic frame where motion and contrast mattered more than perfect tidiness.">
+                <div class="gallery-card__frame">
+                  <img src="img/Art/Zenitsu.jpg" alt="Zenitsu artwork preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Motion-heavy piece</span>
+                  <h3 class="card-title">Zenitsu</h3>
+                  <p>Useful for remembering that energy can matter more than polish.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/Art/Anya.jpg" data-alt="Anya artwork by Sarwin Chandran" data-title="Anya" data-description="A lighter character study with expression doing more work than complexity.">
+                <div class="gallery-card__frame">
+                  <img src="img/Art/Anya.jpg" alt="Anya artwork preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Expression study</span>
+                  <h3 class="card-title">Anya</h3>
+                  <p>Proof that playful pieces still deserve a serious place in the archive.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="gallery-card">
+              <button type="button" data-lightbox-trigger data-image="img/Art/Pochita.jpg" data-alt="Pochita artwork by Sarwin Chandran" data-title="Pochita" data-description="A smaller piece that justifies itself through charm, personality, and clarity of shape.">
+                <div class="gallery-card__frame">
+                  <img src="img/Art/Pochita.jpg" alt="Pochita artwork preview" loading="lazy">
+                </div>
+                <div class="gallery-card__content">
+                  <span class="card-kicker">Small detour</span>
+                  <h3 class="card-title">Pochita</h3>
+                  <p>Sometimes a compact drawing keeps the whole practice feeling alive.</p>
+                </div>
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="process" data-reveal>
+          <div class="split-grid">
+            <section class="panel panel--accent">
+              <span class="panel-label">Process notes</span>
+              <h2 class="panel-title">The most useful art notes are usually not technical tutorials. They are records of what decision changed the image.</h2>
+              <div class="prose">
+                <p>I want the archive to remember what actually helped: where lighting got cleaner, where the pose loosened up, or where I finally stopped overworking a face.</p>
+                <p>That makes the page useful later. It turns the archive from a wall of images into a record of practice.</p>
+              </div>
+            </section>
+
+            <section class="table-card">
+              <span class="panel-label">Questions I keep asking</span>
+              <dl>
+                <div>
+                  <dt>Does the silhouette read fast?</dt>
+                  <dd>If not, no amount of rendering will save the image.</dd>
+                </div>
+                <div>
+                  <dt>Is color doing real work?</dt>
+                  <dd>Palette should push mood or focus, not sit there decoratively.</dd>
+                </div>
+                <div>
+                  <dt>Did the final pass help?</dt>
+                  <dd>Polish is only useful when it strengthens the image rather than flattening it.</dd>
+                </div>
+              </dl>
+            </section>
+          </div>
+        </section>
+
+        <section class="section" id="series" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Series seeds</span>
+            <h2 class="section-title">Ideas that are not full projects yet, but keep appearing often enough to deserve their own future shelf.</h2>
+          </header>
+
+          <div class="entry-grid">
+            <article class="entry-card">
+              <div class="entry-card__body">
+                <span class="entry-card__status">Seed idea</span>
+                <h3 class="entry-title">Controlled lighting studies</h3>
+                <p class="entry-copy">A series focused less on characters themselves and more on what lighting patterns do to emotion, clarity, and restraint.</p>
+              </div>
+            </article>
+
+            <article class="entry-card">
+              <div class="entry-card__body">
+                <span class="entry-card__status">Seed idea</span>
+                <h3 class="entry-title">Gesture before detail</h3>
+                <p class="entry-copy">A set of pieces built to preserve the energy of the first sketch all the way through the final rendering stage.</p>
+              </div>
+            </article>
+
+            <article class="entry-card">
+              <div class="entry-card__body">
+                <span class="entry-card__status">Seed idea</span>
+                <h3 class="entry-title">Quiet frames</h3>
+                <p class="entry-copy">More restrained work where composition, negative space, and stillness do the job instead of constant intensity.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span>&copy; <span data-year></span> Sarwin Chandran. Art archive.</span>
+          <a href="#overview">Back to top</a>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <div class="viewer" data-viewer aria-hidden="true">
+    <div class="viewer__panel">
+      <div class="viewer__header">
+        <div>
+          <h2 data-viewer-title>Artwork</h2>
+          <p data-viewer-description></p>
+        </div>
+        <button class="viewer__close" type="button" data-viewer-close aria-label="Close image viewer">Close</button>
+      </div>
+      <div class="viewer__body">
+        <img data-viewer-image src="img/Art/Prime.jpg" alt="">
+      </div>
     </div>
-
-    <div class="page-content">
-        <section id="top" class="content-section">
-            <div class="subpage-hero" style="background-image: url('img/slide_2.jpg');">
-                <div class="subpage-hero-inner">
-                    <h1>Artworks</h1>
-                    <p>A focused gallery of character pieces, style experiments, and ongoing visual studies.</p>
-                    <div class="split-actions">
-                        <div class="white-button button"><a href="index.html#art">Back to Home Section</a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="content-section">
-            <div id="projects">
-                <div class="section-heading">
-                    <h1>Gallery<br><em>Wall</em></h1>
-                    <p>Tap any frame to open full size in the lightbox viewer.</p>
-                </div>
-                <div class="section-content">
-                    <div class="masonry">
-                        <div class="row">
-                            <div class="item"><div class="col-md-8"><a href="img/Art/Denji.jpg" data-lightbox="art-full"><img src="img/Art/Denji.jpg" alt="Denji artwork" loading="lazy" decoding="async"></a></div></div>
-                            <div class="item"><div class="col-md-4"><a href="img/Art/Maki.jpg" data-lightbox="art-full"><img src="img/Art/Maki.jpg" alt="Maki artwork" loading="lazy" decoding="async"></a></div></div>
-                            <div class="item"><div class="col-md-4"><a href="img/Art/Eren.jpg" data-lightbox="art-full"><img src="img/Art/Eren.jpg" alt="Eren artwork" loading="lazy" decoding="async"></a></div></div>
-                            <div class="item"><div class="col-md-8"><a href="img/Art/Rengoku.jpg" data-lightbox="art-full"><img src="img/Art/Rengoku.jpg" alt="Rengoku artwork" loading="lazy" decoding="async"></a></div></div>
-                        </div>
-                        <div class="row">
-                            <div class="item"><div class="col-md-4"><a href="img/Art/Anya.jpg" data-lightbox="art-full"><img src="img/Art/Anya.jpg" alt="Anya artwork" loading="lazy" decoding="async"></a></div></div>
-                            <div class="item"><div class="col-md-4"><a href="img/Art/Zenitsu.jpg" data-lightbox="art-full"><img src="img/Art/Zenitsu.jpg" alt="Zenitsu artwork" loading="lazy" decoding="async"></a></div></div>
-                            <div class="item"><div class="col-md-4"><a href="img/Art/Gojo.jpg" data-lightbox="art-full"><img src="img/Art/Gojo.jpg" alt="Gojo artwork" loading="lazy" decoding="async"></a></div></div>
-                            <div class="item"><div class="col-md-6"><a href="img/Art/Pochita.jpg" data-lightbox="art-full"><img src="img/Art/Pochita.jpg" alt="Pochita artwork" loading="lazy" decoding="async"></a></div></div>
-                            <div class="item"><div class="col-md-6"><a href="img/Art/Prime.jpg" data-lightbox="art-full"><img src="img/Art/Prime.jpg" alt="Prime artwork" loading="lazy" decoding="async"></a></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="notes" class="content-section">
-            <div class="subpage-content">
-                <div class="section-heading">
-                    <h1>Art<br><em>Direction</em></h1>
-                    <p>What this collection currently focuses on.</p>
-                </div>
-                <div class="stats-grid">
-                    <article class="info-card"><h4>Character anatomy</h4><p>Improving gesture and volume consistency through repeat studies.</p></article>
-                    <article class="info-card"><h4>Color storytelling</h4><p>Using mood-specific palettes to improve atmosphere and contrast.</p></article>
-                    <article class="info-card"><h4>Final polish</h4><p>Better edge handling and cleaner lighting in final pass renders.</p></article>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer"><p>&copy; 2026 Sarwin Chandran. Artworks page.</p></footer>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+  </div>
 </body>
 </html>
-

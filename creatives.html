@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Creatives | Sarwin Chandran</title>
+  <meta name="description" content="Creatives page of Sarwin Chandran with poems, lyrics, demos, and cross-medium fragments.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      var stored = window.localStorage.getItem("sarwinTheme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom-style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="page-creatives">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="mobile-bar">
+      <a class="mobile-brand" href="index.html">
+        <strong>Sarwin Chandran</strong>
+        <span>Discover Me</span>
+      </a>
+      <div class="mobile-actions">
+        <button class="mobile-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="sr-only" data-theme-label>Switch to midnight mode</span>
+          <span class="sr-only" data-theme-state>Paper</span>
+        </button>
+        <button class="mobile-toggle" type="button" data-menu-toggle aria-controls="site-rail" aria-expanded="false">
+          <span class="mobile-toggle__bars" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="site-rail" id="site-rail">
+      <div class="rail-inner">
+        <a class="brandmark" href="index.html">
+          <span class="brandmark__name">Sarwin Chandran</span>
+          <span class="brandmark__tag">Discover Me</span>
+        </a>
+
+        <p class="rail-summary">Creatives is where poems, lyrics, demos, and unfinished fragments can live together without pretending they belong to separate worlds.</p>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="physics.html">Physics</a>
+          <a href="codes.html">Code</a>
+          <a href="artworks.html">Art</a>
+          <a href="captures.html">Captures</a>
+          <a href="creatives.html">Creatives</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span data-theme-label>Switch to midnight mode</span>
+          <span class="theme-toggle__status">
+            <span class="theme-toggle__dot" aria-hidden="true"></span>
+            <span data-theme-state>Paper</span>
+          </span>
+        </button>
+      </div>
+    </aside>
+
+    <button class="drawer-scrim" type="button" data-drawer-close aria-label="Close navigation"></button>
+
+    <main class="site-main" id="main">
+      <article class="page">
+        <section class="section" id="overview" data-reveal>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Creatives</span>
+              <h1 class="hero-title">Poems, lyrics, demos, and fragments kept together so the more intuitive side of the work can <em>stay alive between bigger projects.</em></h1>
+              <p class="lead">This page is intentionally hybrid. It collects the pieces that start as a line, a mood, a melody, or a notebook fragment before they become fully separate works.</p>
+              <div class="chip-row">
+                <span class="chip">Poetry</span>
+                <span class="chip">Lyrics</span>
+                <span class="chip">Demos</span>
+                <span class="chip">Fragments</span>
+              </div>
+              <div class="button-row">
+                <a class="button-primary" href="#writing">Read the writing</a>
+                <a class="button-secondary" href="#sound">See the sound notes</a>
+                <a class="button-ghost" href="blog.html">Open Blog</a>
+              </div>
+            </div>
+
+            <div class="hero-side">
+              <section class="panel panel--accent">
+                <span class="panel-label">Creative note</span>
+                <p class="quote">This page is for the work that begins before it knows whether it wants to be a poem, a lyric, or a track.</p>
+              </section>
+
+              <section class="table-card">
+                <span class="panel-label">What belongs here</span>
+                <dl>
+                  <div>
+                    <dt>Writing</dt>
+                    <dd>Poems, fragments, motifs, and lines worth returning to.</dd>
+                  </div>
+                  <div>
+                    <dt>Sound</dt>
+                    <dd>Demos, mood notes, arrangement questions, and lyric seeds.</dd>
+                  </div>
+                  <div>
+                    <dt>Crossovers</dt>
+                    <dd>The places where technical language and personal writing meet.</dd>
+                  </div>
+                </dl>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <nav class="page-nav section" aria-label="On this page" data-page-nav data-reveal>
+          <a href="#overview">Overview</a>
+          <a href="#writing">Writing</a>
+          <a href="#sound">Sound</a>
+          <a href="#crossovers">Crossovers</a>
+        </nav>
+
+        <section class="section" id="writing" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Writing</span>
+            <h2 class="section-title">Fragments worth keeping in the light, even before they become a larger sequence.</h2>
+          </header>
+
+          <div class="poetry-grid">
+            <article class="entry-card">
+              <div class="entry-card__meta">
+                <span class="tag">Draft</span>
+                <time datetime="2026-03-16">16 Mar 2026</time>
+              </div>
+              <div class="entry-card__body">
+                <h3 class="entry-title">After midnight</h3>
+                <p class="entry-copy">The city gets softer when even the traffic sounds like it is thinking instead of rushing. I keep the line because it remembers a whole season of sleepless work without over-explaining itself.</p>
+              </div>
+            </article>
+
+            <article class="entry-card">
+              <div class="entry-card__meta">
+                <span class="tag">Notebook</span>
+                <time datetime="2026-03-12">12 Mar 2026</time>
+              </div>
+              <div class="entry-card__body">
+                <h3 class="entry-title">Graph paper</h3>
+                <p class="entry-copy">I plotted silence as if it were measurable and still ended up leaning toward memory. Some pieces begin in technical language and only later admit the feeling underneath.</p>
+              </div>
+            </article>
+
+            <article class="entry-card">
+              <div class="entry-card__meta">
+                <span class="tag">Travel</span>
+                <time datetime="2026-03-08">08 Mar 2026</time>
+              </div>
+              <div class="entry-card__body">
+                <h3 class="entry-title">Window seat</h3>
+                <p class="entry-copy">Clouds looked like erased equations, and still the sky solved itself before we landed. It felt too precise to throw away and too unfinished to call complete.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="sound" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Sound</span>
+            <h2 class="section-title">Demos and session notes that stay valuable even before a track is release-ready.</h2>
+          </header>
+
+          <div class="music-grid">
+            <article class="entry-card">
+              <div class="entry-card__meta">
+                <span class="entry-card__status">Demo</span>
+                <time datetime="2026-03-15">15 Mar 2026</time>
+              </div>
+              <div class="entry-card__body">
+                <h3 class="entry-title">Blue-hour arrangement note</h3>
+                <p class="entry-copy">A track that began as atmosphere before it had structure. The next task is deciding whether the arrangement should stay spare or grow wider.</p>
+              </div>
+            </article>
+
+            <article class="entry-card">
+              <div class="entry-card__meta">
+                <span class="entry-card__status">Seed</span>
+                <time datetime="2026-03-10">10 Mar 2026</time>
+              </div>
+              <div class="entry-card__body">
+                <h3 class="entry-title">Night-drive demo</h3>
+                <p class="entry-copy">The emotional center is clear before the track is. That is enough reason to keep the page alive and keep the chorus from disappearing.</p>
+              </div>
+            </article>
+
+            <article class="entry-card">
+              <div class="entry-card__meta">
+                <span class="entry-card__status">Revision</span>
+                <time datetime="2026-03-06">06 Mar 2026</time>
+              </div>
+              <div class="entry-card__body">
+                <h3 class="entry-title">Acoustic reinterpretation</h3>
+                <p class="entry-copy">A stripped-back pass that tests whether the song can still hold its weight without production doing all the emotional work.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="crossovers" data-reveal>
+          <div class="story-grid">
+            <article class="story-card panel--accent">
+              <span class="panel-label">Crossovers</span>
+              <h2 class="panel-title">This page matters because it keeps the softer cross-medium thinking visible.</h2>
+              <div class="prose">
+                <p>Sometimes a poem starts with technical language. Sometimes a track keeps the same mood as a drawing. Sometimes a lyric fragment explains something the blog would overstate. Those crossings belong here.</p>
+                <p>Keeping them together makes the rest of the portfolio feel more complete, not less focused.</p>
+              </div>
+            </article>
+
+            <article class="quote-card">
+              <span class="panel-label">Working line</span>
+              <p class="quote">Some variables are numbers. Some variables are courage. Both need tuning.</p>
+            </article>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span>&copy; <span data-year></span> Sarwin Chandran. Creatives.</span>
+          <a href="#overview">Back to top</a>
+        </footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

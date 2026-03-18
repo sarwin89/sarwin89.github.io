@@ -1,68 +1,57 @@
-<style>
-  .back {
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    animation-name: backdiv;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-  .heart {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: pink;
-    height: 50px;
-    width: 50px;
-    transform: rotate(-45deg);
-    animation-name: beat;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-  .heart::after {
-    background-color: pink;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 25px;
-  }
-  .heart::before {
-    background-color: pink;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 0px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small Page | Sarwin Chandran</title>
+  <meta name="description" content="A small side-page from the Sarwin Chandran Discover Me portfolio.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      var stored = window.localStorage.getItem("sarwinTheme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom-style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="page-heart">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  @keyframes backdiv {
-    50% {
-      background: #ffe6f2;
-    }
-  }
+  <main class="site-main" id="main">
+    <article class="page">
+      <section class="section" data-reveal>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Small side-page</span>
+            <h1 class="hero-title">A tiny page for the part of the archive that still likes <em>small gestures.</em></h1>
+            <p class="lead">Not everything in a portfolio has to become a major section. Sometimes a small page is enough to keep a mood, an experiment, or a private joke in the same world as the larger work.</p>
+            <div class="button-row">
+              <a class="button-primary" href="index.html">Back to the archive</a>
+              <a class="button-secondary" href="poetry.html">Open poetry</a>
+            </div>
+          </div>
 
-  @keyframes beat {
-    0% {
-      transform: scale(1) rotate(-45deg);
-    }
-    50% {
-      transform: scale(0.6) rotate(-45deg);
-    }
-  }
-
-</style>
-<div class="back"></div>
-<div class="heart"></div>
+          <div class="hero-side">
+            <section class="heart-card panel--accent">
+              <span class="panel-label">Small gesture</span>
+              <div class="orbit-field" aria-hidden="true">
+                <span class="orbit-ring"></span>
+                <span class="orbit-core"></span>
+                <span class="orbit-point orbit-point--one"></span>
+                <span class="orbit-point orbit-point--two"></span>
+                <span class="orbit-point orbit-point--three"></span>
+              </div>
+              <p class="text-muted">A miniature page can still belong to the same archive if the visual language stays coherent.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
