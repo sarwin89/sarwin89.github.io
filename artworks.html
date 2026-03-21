@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Art Archive | Sarwin Chandran</title>
-  <meta name="description" content="Art page of Sarwin Chandran with finished pieces, process notes, and ideas for future series.">
+  <meta name="description" content="Art page of Sarwin Chandran with character drawings, gallery notes, and a growing archive for future work beyond anime studies.">
   <meta name="color-scheme" content="light dark">
   <script>
     (function() {
@@ -48,7 +48,7 @@
           <span class="brandmark__name">Sarwin Chandran</span>
           <span class="brandmark__tag">Discover Me</span>
         </a>
-        <p class="rail-summary">The Art page keeps finished pieces, studies, and visual decisions in one place without losing the process around them.</p>
+        <p class="rail-summary">The Art page is becoming a growing wall for finished drawings, studio notes, and future shelves that do more than sit in a folder.</p>
         <nav class="site-nav" aria-label="Primary">
           <a href="index.html">Home</a>
           <a href="physics.html">Physics</a>
@@ -76,16 +76,16 @@
           <div class="hero-grid">
             <div class="hero-copy">
               <span class="eyebrow">Art</span>
-              <h1 class="hero-title">Finished pieces, studies, and visual notes that explain <em>what changed between sketch and final.</em></h1>
-              <p class="lead">I wanted the art room to feel more like a chosen wall than a feed. The image matters, but so does the reason it worked: lighting, silhouette, restraint, gesture, or color.</p>
+              <h1 class="hero-title">A room for drawings I want to archive properly, with enough context to remember <em>why each piece stayed with me.</em></h1>
+              <p class="lead">This first wall is mostly anime and pop-culture character work drawn on A4 sheets. It is only one shelf of the page, though. Later I want this archive to hold portrait studies, sketchbook fragments, and quieter experiments too.</p>
               <div class="chip-row">
-                <span class="chip">Character work</span>
-                <span class="chip">Color studies</span>
-                <span class="chip">Process notes</span>
+                <span class="chip">Character drawings</span>
+                <span class="chip">A4 portrait + landscape</span>
+                <span class="chip">Fullscreen viewer</span>
               </div>
               <div class="button-row">
-                <a class="button-primary" href="#gallery">Open the gallery</a>
-                <a class="button-secondary" href="#process">Read the process notes</a>
+                <a class="button-primary" href="#anime-drawings">Open the anime wall</a>
+                <a class="button-secondary" href="#studio-notes">Read studio notes</a>
                 <a class="button-ghost" href="index.html">Back to home</a>
               </div>
             </div>
@@ -93,25 +93,25 @@
             <div class="hero-side">
               <figure class="snapshot">
                 <div class="hero-frame">
-                  <img src="img/Art/Prime.jpg" alt="Prime artwork by Sarwin Chandran" loading="eager">
+                  <img src="img/Art/viewer/KnightPrime.jpg" alt="Knight Prime drawing by Sarwin Chandran" loading="eager" fetchpriority="high">
                 </div>
-                <figcaption>A useful art page keeps the visual impact and the decision-making in the same frame.</figcaption>
+                <figcaption>The archive opens with the louder pieces, but the goal is to make every later shelf feel just as considered.</figcaption>
               </figure>
 
               <section class="table-card">
-                <span class="panel-label">What I try to keep beside a piece</span>
+                <span class="panel-label">How this wall works</span>
                 <dl>
                   <div>
-                    <dt>Intent</dt>
-                    <dd>What the image was trying to do emotionally or visually.</dd>
+                    <dt>Current shelf</dt>
+                    <dd>Anime drawings first, then a separate shelf for other icons, with kirigami prepared as its own square-format room.</dd>
                   </div>
                   <div>
-                    <dt>Change</dt>
-                    <dd>The one adjustment that made the piece stronger than the sketch.</dd>
+                    <dt>Format</dt>
+                    <dd>Every piece here is built from A4 portrait or landscape compositions, so the layout respects that ratio.</dd>
                   </div>
                   <div>
-                    <dt>Lesson</dt>
-                    <dd>What I would carry into the next drawing instead of relearning it.</dd>
+                    <dt>Viewer</dt>
+                    <dd>Open any drawing for a larger post-style view with a side note rail, not just a flat lightbox.</dd>
                   </div>
                 </dl>
               </section>
@@ -121,119 +121,346 @@
 
         <nav class="page-nav section" aria-label="On this page" data-page-nav data-reveal>
           <a href="#overview">Overview</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#process">Process</a>
-          <a href="#series">Series seeds</a>
+          <a href="#anime-drawings">Anime drawings</a>
+          <a href="#other-icons">Other icons</a>
+          <a href="#kirigami">Kirigami</a>
+          <a href="#studio-notes">Studio notes</a>
         </nav>
 
-        <section class="section" id="gallery" data-reveal>
+        <section class="section" id="anime-drawings" data-reveal>
           <header class="section-header">
-            <span class="eyebrow">Gallery wall</span>
-            <h2 class="section-title">Images that deserve a stronger home than a folder and enough notes to remember why they worked.</h2>
+            <span class="eyebrow">Anime drawings</span>
+            <h2 class="section-title">The main wall stays focused on anime character work, with each piece opening into a fuller post-style view.</h2>
+            <p class="section-intro">Tap or click any drawing to open the larger post view. On wider screens the context sits to the right like a desktop post; on smaller screens it stacks underneath without losing the image.</p>
           </header>
 
-          <div class="gallery-grid">
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Prime.jpg" data-alt="Prime artwork by Sarwin Chandran" data-title="Prime" data-description="A piece about restraint, clean finish, and trusting the composition enough to stop adding.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Prime.jpg" alt="Prime artwork preview" loading="lazy">
+          <div class="art-grid" aria-label="Anime character drawings gallery">
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Gojo2.jpg" data-alt="Gojo drawing by Sarwin Chandran" data-title="Gojo II" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Close crop and icy contrast" data-description="A tighter Gojo study that lets the eyes and hand placement carry most of the image." data-note="The crop is doing a lot of work here. It makes the piece feel immediate without needing background detail.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Gojo2.jpg" alt="Gojo artwork preview" loading="lazy" decoding="async">
                 </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Finished piece</span>
-                  <h3 class="card-title">Prime</h3>
-                  <p>The kind of drawing that teaches patience rather than speed.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Rengoku.jpg" data-alt="Rengoku artwork by Sarwin Chandran" data-title="Rengoku" data-description="Strong color and stronger energy, with palette doing as much emotional work as line.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Rengoku.jpg" alt="Rengoku artwork preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Color-driven piece</span>
-                  <h3 class="card-title">Rengoku</h3>
-                  <p>Useful for studying how lighting can carry the whole mood.</p>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Gojo II</h3>
+                  <p>A close study where the bright eyes and open hand do more work than a busy composition would.</p>
                 </div>
               </button>
             </article>
 
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Gojo.jpg" data-alt="Gojo artwork by Sarwin Chandran" data-title="Gojo" data-description="A style-forward piece focused on silhouette control and knowing exactly how much detail was enough.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Gojo.jpg" alt="Gojo artwork preview" loading="lazy">
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Anya.jpg" data-alt="Anya Forger drawing by Sarwin Chandran" data-title="Anya" data-shelf="Anime drawings" data-format="A4 landscape" data-focus="Playful expression and bright color" data-description="A cheerful character drawing where the open pose and bright palette make the whole sheet feel in motion." data-note="The background stays simple on purpose so the gesture and expression land first.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Anya.jpg" alt="Anya artwork preview" loading="lazy" decoding="async">
                 </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Character study</span>
-                  <h3 class="card-title">Gojo</h3>
-                  <p>Where detail only mattered when it helped the silhouette read faster.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Maki.jpg" data-alt="Maki artwork by Sarwin Chandran" data-title="Maki" data-description="A study in balancing pose, gesture, and finish without losing the life of the sketch.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Maki.jpg" alt="Maki artwork preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Pose study</span>
-                  <h3 class="card-title">Maki</h3>
-                  <p>The piece that made pressure, shape language, and body balance easier to talk about.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Zenitsu.jpg" data-alt="Zenitsu artwork by Sarwin Chandran" data-title="Zenitsu" data-description="A more energetic frame where motion and contrast mattered more than perfect tidiness.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Zenitsu.jpg" alt="Zenitsu artwork preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Motion-heavy piece</span>
-                  <h3 class="card-title">Zenitsu</h3>
-                  <p>Useful for remembering that energy can matter more than polish.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Anya.jpg" data-alt="Anya artwork by Sarwin Chandran" data-title="Anya" data-description="A lighter character study with expression doing more work than complexity.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Anya.jpg" alt="Anya artwork preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Expression study</span>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
                   <h3 class="card-title">Anya</h3>
-                  <p>Proof that playful pieces still deserve a serious place in the archive.</p>
+                  <p>Bright, playful, and open. The pose carries the energy before any detail has to.</p>
                 </div>
               </button>
             </article>
 
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Pochita.jpg" data-alt="Pochita artwork by Sarwin Chandran" data-title="Pochita" data-description="A smaller piece that justifies itself through charm, personality, and clarity of shape.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Pochita.jpg" alt="Pochita artwork preview" loading="lazy">
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/DenjiReeze.jpg" data-alt="Denji and Reze drawing by Sarwin Chandran" data-title="Denji &amp; Reze" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Quiet intimacy and watercolor edge" data-description="A softer piece that uses a narrow figure crop and deep blue wash to keep the moment intimate." data-note="This one changes the page rhythm because it is quieter than the action-heavy pieces around it.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/DenjiReeze.jpg" alt="Denji and Reze artwork preview" loading="lazy" decoding="async">
                 </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Small detour</span>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Denji &amp; Reze</h3>
+                  <p>A restrained duo portrait where the blue wash gives the whole piece its emotional temperature.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/GojoGeto.jpg" data-alt="Gojo and Geto drawing by Sarwin Chandran" data-title="Gojo &amp; Geto" data-shelf="Anime drawings" data-format="A4 landscape" data-focus="Dual composition and monochrome balance" data-description="A two-character frame where spacing and mirrored attitude matter as much as the linework." data-note="Keeping this monochrome gives the piece a different weight than the louder color studies in the shelf.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/GojoGeto.jpg" alt="Gojo and Geto artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
+                  <h3 class="card-title">Gojo &amp; Geto</h3>
+                  <p>A paired portrait where distance, balance, and black shapes carry the whole effect.</p>
+                </div>
+              </button>
+            </article>
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Eren.jpg" data-alt="Eren drawing by Sarwin Chandran" data-title="Eren" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Intensity and shadow shape" data-description="A character study that relies on dark values and a direct stare more than decorative background work." data-note="The strongest part here is how the face stays readable even when the darks get heavier.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Eren.jpg" alt="Eren artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Eren</h3>
+                  <p>Mostly carried by value contrast and stare direction rather than anything ornamental.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Makima.jpg" data-alt="Makima drawing by Sarwin Chandran" data-title="Makima" data-shelf="Anime drawings" data-format="A4 landscape" data-focus="Restraint and controlled red accents" data-description="A calm frame where most of the force comes from selective color and a composed pose." data-note="Pieces like this keep the page from becoming all volume and action. The restraint matters too.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Makima.jpg" alt="Makima artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
+                  <h3 class="card-title">Makima</h3>
+                  <p>Proof that a quieter pose can still dominate when the color restraint is disciplined.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Gaara.jpg" data-alt="Gaara drawing by Sarwin Chandran" data-title="Gaara" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Stillness and earth-toned control" data-description="A portrait study with a calmer posture and a palette that stays grounded instead of flashy." data-note="This is the kind of piece that benefits from being seen tall, because the vertical frame adds quiet to it.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Gaara.jpg" alt="Gaara artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Gaara</h3>
+                  <p>A steadier portrait where color temperature and pose do more than extra detail would.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Pochita.jpg" data-alt="Pochita drawing by Sarwin Chandran" data-title="Pochita" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Charm, shape clarity, and warm contrast" data-description="A smaller character idea that works because the silhouette is immediate and the color placement stays clear." data-note="A playful drawing still deserves a serious place in the archive if the shape language holds up.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Pochita.jpg" alt="Pochita artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
                   <h3 class="card-title">Pochita</h3>
-                  <p>Sometimes a compact drawing keeps the whole practice feeling alive.</p>
+                  <p>Compact, clear, and full of personality without needing the page to do much around it.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Rengoku.jpg" data-alt="Rengoku drawing by Sarwin Chandran" data-title="Rengoku" data-shelf="Anime drawings" data-format="A4 landscape" data-focus="Heat, motion, and saturated color" data-description="A louder piece driven by flame-like color relationships and a pose that wants to move forward." data-note="This one earns its space by keeping the energy high without losing the face in the process.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Rengoku.jpg" alt="Rengoku artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
+                  <h3 class="card-title">Rengoku</h3>
+                  <p>One of the high-energy pieces where the color itself has to carry the temperature.</p>
+                </div>
+              </button>
+            </article>
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Sukuna.jpg" data-alt="Sukuna drawing by Sarwin Chandran" data-title="Sukuna" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Sharp expression and vertical tension" data-description="A portrait that holds attention through gaze, hand placement, and controlled negative space." data-note="The vertical build helps the pose feel taller and more confrontational, which suits the character well.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Sukuna.jpg" alt="Sukuna artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Sukuna</h3>
+                  <p>A tall frame with enough empty space around it to make the expression hit harder.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Gojo.jpg" data-alt="Gojo drawing by Sarwin Chandran" data-title="Gojo" data-shelf="Anime drawings" data-format="A4 landscape" data-focus="Attitude, open space, and clean finish" data-description="A wider Gojo study that uses negative space and silhouette clarity rather than excess detail." data-note="This is a good example of how stopping at the right moment can make a piece stronger than overworking it.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Gojo.jpg" alt="Gojo artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
+                  <h3 class="card-title">Gojo</h3>
+                  <p>Wider, cleaner, and built around silhouette reading faster than the detail ever could.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/YoriTanji.jpg" data-alt="Yoriichi and Tanjiro drawing by Sarwin Chandran" data-title="Yoriichi / Tanjiro" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Line hierarchy and two-character balance" data-description="A tall dual-character drawing where the challenge is giving both figures a clear relationship without crowding the page." data-note="This kind of duo piece is useful because composition decisions have to work harder than in a single portrait.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/YoriTanji.jpg" alt="Yoriichi and Tanjiro artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Yoriichi / Tanjiro</h3>
+                  <p>A stacked duo study where the composition has to keep both figures legible at once.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Reze1.jpg" data-alt="Reze drawing by Sarwin Chandran" data-title="Reze" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Soft pose and isolated figure" data-description="A quieter single-character piece that benefits from an uncluttered field and a gentle posture." data-note="The stillness is the point here. It gives the page room to breathe between louder images.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Reze1.jpg" alt="Reze artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Reze</h3>
+                  <p>A soft portrait where leaving more space around the figure helps the mood stay intact.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Chainsaw.jpg" data-alt="Chainsaw Man drawing by Sarwin Chandran" data-title="Chainsaw" data-shelf="Anime drawings" data-format="A4 landscape" data-focus="Mechanical silhouette and aggressive contrast" data-description="A character drawing that depends on shape recognition and sharp dark-light separation more than subtle gradients." data-note="This kind of design either reads instantly or it does not, so silhouette clarity mattered first.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Chainsaw.jpg" alt="Chainsaw artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
+                  <h3 class="card-title">Chainsaw</h3>
+                  <p>A hard-edged piece where the silhouette has to strike before the viewer reads anything else.</p>
+                </div>
+              </button>
+            </article>
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/HashiTobi.jpg" data-alt="HashiTobi drawing by Sarwin Chandran" data-title="Hashi / Tobi" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Paired posture and quiet contrast" data-description="A two-character vertical composition where balance matters more than spectacle." data-note="Tall duo pieces are useful practice because the eye has to move cleanly from one figure to the next.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/HashiTobi.jpg" alt="HashiTobi artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Hashi / Tobi</h3>
+                  <p>A vertical duo study that leans on spacing and posture instead of flashy effects.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Luffy.jpg" data-alt="Luffy drawing by Sarwin Chandran" data-title="Luffy" data-shelf="Anime drawings" data-format="A4 landscape" data-focus="Motion, grin, and saturated warmth" data-description="A more animated frame where the body language matters as much as the likeness." data-note="This is the kind of image that keeps the wall from feeling too formal, which is important on a personal archive.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Luffy.jpg" alt="Luffy artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
+                  <h3 class="card-title">Luffy</h3>
+                  <p>A warmer action study where body language and expression do the heavy lifting together.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Maaki.jpg" data-alt="Maki drawing by Sarwin Chandran" data-title="Maki" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Grounded stance and line confidence" data-description="A figure-led study where pose stability and shape clarity matter more than rendering flourishes." data-note="It earns its place because the stance reads early and stays believable all the way down the frame.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Maaki.jpg" alt="Maki artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Maki</h3>
+                  <p>A steadier body-led study where confidence in the pose matters more than extra polish.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Yoriichi.jpg" data-alt="Yoriichi drawing by Sarwin Chandran" data-title="Yoriichi" data-shelf="Anime drawings" data-format="A4 portrait" data-focus="Stillness, gaze, and measured line" data-description="A portrait that stays quiet on purpose, letting the face and posture hold the center." data-note="This kind of restraint keeps the page from becoming all spectacle and no pacing.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Yoriichi.jpg" alt="Yoriichi artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Yoriichi</h3>
+                  <p>A restrained portrait where expression and stillness carry the piece more than surface effects.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/Zenitsu.jpg" data-alt="Zenitsu drawing by Sarwin Chandran" data-title="Zenitsu" data-shelf="Anime drawings" data-format="A4 landscape" data-focus="Movement and directional contrast" data-description="A motion-heavy composition where the energy of the figure matters more than neatness." data-note="This is one of the places where keeping some roughness helps the image rather than hurting it.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Zenitsu.jpg" alt="Zenitsu artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
+                  <h3 class="card-title">Zenitsu</h3>
+                  <p>Fast, directional, and useful as a reminder that energy can matter more than tidiness.</p>
                 </div>
               </button>
             </article>
           </div>
         </section>
 
-        <section class="section" id="process" data-reveal>
+        <section class="section" id="other-icons" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Other icons</span>
+            <h2 class="section-title">A second wall for the non-anime obsessions that still belong in the archive.</h2>
+            <p class="section-intro">Knight Prime and Ozzy / Randy now live on their own shelf so this part can grow without interrupting the anime wall.</p>
+          </header>
+
+          <div class="art-grid art-grid--icons" aria-label="Other icon drawings gallery">
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/KnightPrime.jpg" data-alt="Knight Prime drawing by Sarwin Chandran" data-title="Knight Prime" data-shelf="Other icons" data-format="A4 landscape" data-focus="Ink detail and selective red accents" data-description="A mechanical character study that leans on line density and red highlights instead of heavy rendering." data-note="This is one of the boldest pieces on the page, so it deserved a separate wall instead of being folded into the anime section.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/KnightPrime.jpg" alt="Knight Prime artwork preview" loading="eager" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 landscape</span>
+                  <h3 class="card-title">Knight Prime</h3>
+                  <p>Built around armor detail, strong silhouette, and a red accent that keeps the whole frame awake.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-image="img/Art/viewer/OzzyRandy.jpg" data-alt="Ozzy and Randy drawing by Sarwin Chandran" data-title="Ozzy &amp; Randy" data-shelf="Other icons" data-format="A4 portrait" data-focus="Loose pen energy and duo gesture" data-description="A less anime-coded detour that still belongs here because it is built on character, movement, and line confidence." data-note="Keeping this on its own shelf makes room for more music and pop-culture studies later without blurring the anime wall.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/OzzyRandy.jpg" alt="Ozzy and Randy artwork preview" loading="lazy" decoding="async">
+                </div>
+                <div class="art-card__meta">
+                  <span class="art-card__eyebrow">A4 portrait</span>
+                  <h3 class="card-title">Ozzy &amp; Randy</h3>
+                  <p>A pen-heavy live-energy sketch that widens the archive without breaking its character focus.</p>
+                </div>
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="kirigami" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Kirigami</span>
+            <h2 class="section-title">A separate square-format room is ready for the kirigami work you add next.</h2>
+            <p class="section-intro">This section is tuned for square compositions, so when the paper-cut images arrive they can sit in their own rhythm instead of being forced into the A4 drawing layout.</p>
+          </header>
+
+          <div class="kirigami-grid">
+            <article class="kirigami-placeholder">
+              <div class="kirigami-placeholder__frame">
+                <span class="kirigami-placeholder__label">Square-format shelf</span>
+                <h3>Kirigami pieces coming next</h3>
+                <p>This wall is reserved for cut-paper work, layered compositions, and anything that wants a more geometric square frame.</p>
+              </div>
+            </article>
+
+            <section class="table-card">
+              <span class="panel-label">Planned setup</span>
+              <dl>
+                <div>
+                  <dt>Format</dt>
+                  <dd>Mostly square images so the page treats kirigami as its own visual language.</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Cut-paper layering, negative space, and cleaner shape logic than the drawing shelves.</dd>
+                </div>
+                <div>
+                  <dt>Ready for later</dt>
+                  <dd>The section is already in place, so adding the images later becomes a content pass instead of another layout rebuild.</dd>
+                </div>
+              </dl>
+            </section>
+          </div>
+        </section>
+
+        <section class="section" id="studio-notes" data-reveal>
           <div class="split-grid">
             <section class="panel panel--accent">
-              <span class="panel-label">Process notes</span>
-              <h2 class="panel-title">The most useful art notes are usually not technical tutorials. They are records of what decision changed the image.</h2>
+              <span class="panel-label">Studio notes</span>
+              <h2 class="panel-title">The archive gets more useful when each drawing remembers what decision made it stronger.</h2>
               <div class="prose">
-                <p>I want the archive to remember what actually helped: where lighting got cleaner, where the pose loosened up, or where I finally stopped overworking a face.</p>
-                <p>That makes the page useful later. It turns the archive from a wall of images into a record of practice.</p>
+                <p>I do not want this page to behave like a dump of finished files. I want it to remember what changed between sketch and final: where the silhouette finally read, where the color stopped fighting the subject, or where a quieter crop said more than extra detail.</p>
+                <p>That is also why the fullscreen view has a right-side note rail. It keeps the drawing and the reason behind it in the same place, which is much closer to how I actually think about the work.</p>
               </div>
             </section>
 
@@ -241,52 +468,19 @@
               <span class="panel-label">Questions I keep asking</span>
               <dl>
                 <div>
-                  <dt>Does the silhouette read fast?</dt>
-                  <dd>If not, no amount of rendering will save the image.</dd>
+                  <dt>Does the likeness land early?</dt>
+                  <dd>If the face only works after rendering, the structure probably was not there yet.</dd>
                 </div>
                 <div>
-                  <dt>Is color doing real work?</dt>
-                  <dd>Palette should push mood or focus, not sit there decoratively.</dd>
+                  <dt>Is the pose carrying real weight?</dt>
+                  <dd>Good gesture saves more drawings than extra detailing ever will.</dd>
                 </div>
                 <div>
-                  <dt>Did the final pass help?</dt>
-                  <dd>Polish is only useful when it strengthens the image rather than flattening it.</dd>
+                  <dt>Did restraint help?</dt>
+                  <dd>Some of the strongest pieces here worked because I stopped before flattening them.</dd>
                 </div>
               </dl>
             </section>
-          </div>
-        </section>
-
-        <section class="section" id="series" data-reveal>
-          <header class="section-header">
-            <span class="eyebrow">Series seeds</span>
-            <h2 class="section-title">Ideas that are not full projects yet, but keep appearing often enough to deserve their own future shelf.</h2>
-          </header>
-
-          <div class="entry-grid">
-            <article class="entry-card">
-              <div class="entry-card__body">
-                <span class="entry-card__status">Seed idea</span>
-                <h3 class="entry-title">Controlled lighting studies</h3>
-                <p class="entry-copy">A series focused less on characters themselves and more on what lighting patterns do to emotion, clarity, and restraint.</p>
-              </div>
-            </article>
-
-            <article class="entry-card">
-              <div class="entry-card__body">
-                <span class="entry-card__status">Seed idea</span>
-                <h3 class="entry-title">Gesture before detail</h3>
-                <p class="entry-copy">A set of pieces built to preserve the energy of the first sketch all the way through the final rendering stage.</p>
-              </div>
-            </article>
-
-            <article class="entry-card">
-              <div class="entry-card__body">
-                <span class="entry-card__status">Seed idea</span>
-                <h3 class="entry-title">Quiet frames</h3>
-                <p class="entry-copy">More restrained work where composition, negative space, and stillness do the job instead of constant intensity.</p>
-              </div>
-            </article>
           </div>
         </section>
 
@@ -298,18 +492,47 @@
     </main>
   </div>
 
-  <div class="viewer" data-viewer aria-hidden="true">
+  <div class="viewer" data-viewer aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="viewer-title">
     <div class="viewer__panel">
-      <div class="viewer__header">
-        <div>
-          <h2 data-viewer-title>Artwork</h2>
-          <p data-viewer-description></p>
+      <div class="viewer__media">
+        <div class="viewer__blur" data-viewer-blur aria-hidden="true"></div>
+        <figure class="viewer__figure">
+          <img data-viewer-image src="img/Art/viewer/KnightPrime.jpg" alt="">
+        </figure>
+      </div>
+      <aside class="viewer__aside">
+        <div class="viewer__topline">
+          <p class="viewer__eyebrow" data-viewer-shelf>Art archive</p>
+          <button class="viewer__close" type="button" data-viewer-close aria-label="Close image viewer">Close</button>
         </div>
-        <button class="viewer__close" type="button" data-viewer-close aria-label="Close image viewer">Close</button>
-      </div>
-      <div class="viewer__body">
-        <img data-viewer-image src="img/Art/Prime.jpg" alt="">
-      </div>
+        <h2 id="viewer-title" data-viewer-title>Artwork</h2>
+        <p class="viewer__description" data-viewer-description></p>
+        <dl class="viewer__facts">
+          <div>
+            <dt>Series</dt>
+            <dd data-viewer-series>Archive note</dd>
+          </div>
+          <div>
+            <dt>Format</dt>
+            <dd data-viewer-format>A4 study</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd data-viewer-focus>Line and silhouette</dd>
+          </div>
+          <div>
+            <dt>Studio note</dt>
+            <dd data-viewer-note>This viewer keeps the image and the reason it works in one frame.</dd>
+          </div>
+        </dl>
+        <div class="viewer__actions">
+          <button class="viewer__like" type="button" data-like-button aria-pressed="false">
+            <span data-like-label>Like this post</span>
+            <span class="viewer__like-count" data-like-count>0</span>
+          </button>
+          <p class="viewer__like-hint" data-like-hint>Stored on this browser only.</p>
+        </div>
+      </aside>
     </div>
   </div>
 </body>
