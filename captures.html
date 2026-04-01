@@ -131,75 +131,68 @@
 
         <section class="section" id="frames" data-reveal>
           <header class="section-header">
-            <span class="eyebrow">Selected frames</span>
-            <h2 class="section-title">Images that should carry their own memory, not just an export date.</h2>
+            <span class="eyebrow">Capture gallery</span>
+            <h2 class="section-title">A growing archive split by what each frame is trying to hold.</h2>
+            <p class="section-copy">Stars is live now from your Pixel 7 folder. Moon and normal sections are ready so you can drop in more photos any time.</p>
           </header>
 
-          <div class="gallery-grid">
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_1.jpg" data-alt="Wide sky frame from Sarwin's captures page" data-title="Wide sky frame" data-description="A broad sky image that remembers the whole session, not only the stars.">
-                <div class="gallery-card__frame">
-                  <img src="img/portfolio_1.jpg" alt="Wide sky frame preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Night frame</span>
-                  <h3 class="card-title">Wide sky frame</h3>
-                  <p>A record of darkness, patience, and a location that felt worth returning to.</p>
-                </div>
-              </button>
-            </article>
+          <div class="capture-layout" data-capture-gallery>
+            <section class="capture-cluster" id="stars-gallery">
+              <header class="capture-cluster__header">
+                <span class="panel-label">Stars</span>
+                <h3 class="capture-cluster__title">Astrophotos from Pixel 7</h3>
+                <p class="capture-cluster__copy">Open any frame for fullscreen view with a blurred backdrop, context panel, and local like toggle.</p>
+              </header>
+              <div class="gallery-grid capture-grid capture-grid--stars" data-capture-grid="stars"></div>
+            </section>
 
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_2.jpg" data-alt="Lunar detail test from Sarwin's captures page" data-title="Lunar detail test" data-description="A frame worth keeping because the setup, crop, and final detail all mattered.">
-                <div class="gallery-card__frame">
-                  <img src="img/portfolio_2.jpg" alt="Lunar detail test preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Moon study</span>
-                  <h3 class="card-title">Lunar detail test</h3>
-                  <p>Technical enough to be careful about, visual enough to remember as a night in its own right.</p>
-                </div>
-              </button>
-            </article>
+            <section class="capture-cluster" id="moon-gallery">
+              <header class="capture-cluster__header">
+                <span class="panel-label">Moon</span>
+                <h3 class="capture-cluster__title">Moon photos section</h3>
+                <p class="capture-cluster__copy">Reserved for your lunar captures and close-up passes.</p>
+              </header>
+              <div class="gallery-grid capture-grid capture-grid--draft">
+                <article class="gallery-card capture-card capture-placeholder">
+                  <div class="capture-placeholder__inner">
+                    <span class="entry-card__status">Slot ready</span>
+                    <h4 class="capture-placeholder__title">Add your first moon frame</h4>
+                    <p>Use this section for waxing, full, eclipse, and detail studies.</p>
+                  </div>
+                </article>
+                <article class="gallery-card capture-card capture-placeholder">
+                  <div class="capture-placeholder__inner">
+                    <span class="entry-card__status">Slot ready</span>
+                    <h4 class="capture-placeholder__title">Add stacked or edited moon variants</h4>
+                    <p>Keep alternate processing outputs together for side-by-side comparisons.</p>
+                  </div>
+                </article>
+              </div>
+            </section>
 
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_3.jpg" data-alt="Constellation pass from Sarwin's captures page" data-title="Constellation pass" data-description="Tracking, timing, and the gap between what the eye saw and what the sensor finally earned.">
-                <div class="gallery-card__frame">
-                  <img src="img/portfolio_3.jpg" alt="Constellation pass preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Constellation</span>
-                  <h3 class="card-title">Constellation pass</h3>
-                  <p>The notes around the frame are half of why it matters.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_4.jpg" data-alt="Field exposure from Sarwin's captures page" data-title="Field exposure" data-description="A long-exposure frame where site choice, patience, and one late adjustment changed the result.">
-                <div class="gallery-card__frame">
-                  <img src="img/portfolio_4.jpg" alt="Field exposure preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Long exposure</span>
-                  <h3 class="card-title">Field exposure</h3>
-                  <p>Sometimes the strongest frame is the one that almost never happened.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/portfolio_big_5.jpg" data-alt="Processed stack from Sarwin's captures page" data-title="Processed stack" data-description="A frame for documenting processing choices, color discipline, and what still felt slightly too pushed.">
-                <div class="gallery-card__frame">
-                  <img src="img/portfolio_5.jpg" alt="Processed stack preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Processed stack</span>
-                  <h3 class="card-title">Processed stack</h3>
-                  <p>The workflow around the image is part of the capture, not a separate afterthought.</p>
-                </div>
-              </button>
-            </article>
+            <section class="capture-cluster" id="normal-gallery">
+              <header class="capture-cluster__header">
+                <span class="panel-label">Normal photos</span>
+                <h3 class="capture-cluster__title">Daily and travel captures section</h3>
+                <p class="capture-cluster__copy">Reserved for normal photos, street scenes, portraits, and everything outside astro nights.</p>
+              </header>
+              <div class="gallery-grid capture-grid capture-grid--draft">
+                <article class="gallery-card capture-card capture-placeholder">
+                  <div class="capture-placeholder__inner">
+                    <span class="entry-card__status">Slot ready</span>
+                    <h4 class="capture-placeholder__title">Add your first normal photo set</h4>
+                    <p>Use this area for daily visuals that deserve their own story and context.</p>
+                  </div>
+                </article>
+                <article class="gallery-card capture-card capture-placeholder">
+                  <div class="capture-placeholder__inner">
+                    <span class="entry-card__status">Slot ready</span>
+                    <h4 class="capture-placeholder__title">Add more categories later</h4>
+                    <p>Rain, architecture, portraits, or anything else can be added as another block here.</p>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
         </section>
 
@@ -293,17 +286,35 @@
     </main>
   </div>
 
-  <div class="viewer" data-viewer aria-hidden="true">
+  <div class="viewer" data-viewer data-like-default="Like this photo" aria-hidden="true">
     <div class="viewer__panel">
-      <div class="viewer__header">
-        <div>
-          <h2 data-viewer-title>Capture</h2>
-          <p data-viewer-description></p>
+      <div class="viewer__layout">
+        <div class="viewer__media" data-viewer-media>
+          <img data-viewer-image src="img/Stars/StarsProcessed-1.jpg" alt="">
         </div>
-        <button class="viewer__close" type="button" data-viewer-close aria-label="Close image viewer">Close</button>
-      </div>
-      <div class="viewer__body">
-        <img data-viewer-image src="img/portfolio_big_1.jpg" alt="">
+        <aside class="viewer__aside">
+          <div class="viewer__header">
+            <div>
+              <h2 data-viewer-title>Capture</h2>
+              <p data-viewer-description></p>
+            </div>
+            <button class="viewer__close" type="button" data-viewer-close aria-label="Close image viewer">Close</button>
+          </div>
+          <dl class="viewer__meta-list">
+            <div><dt>Collection</dt><dd data-viewer-series>Stars</dd></div>
+            <div><dt>Shot type</dt><dd data-viewer-format>Pixel 7 astrophotography</dd></div>
+            <div><dt>Capture context</dt><dd data-viewer-character></dd></div>
+            <div><dt>Edit note</dt><dd data-viewer-studio></dd></div>
+          </dl>
+          <div class="viewer__actions">
+            <button class="viewer__like" type="button" data-viewer-like>
+              <span aria-hidden="true">&#10084;</span>
+              <span data-viewer-like-label>Like this photo</span>
+            </button>
+            <p class="viewer__likes"><span data-viewer-like-count>0</span> likes</p>
+            <p class="text-muted viewer__device-note" data-viewer-device-note></p>
+          </div>
+        </aside>
       </div>
     </div>
   </div>

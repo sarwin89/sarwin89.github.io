@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Einstein Summation Notation Primer | Physics Notebook</title>
+  <meta name="description" content="A notebook-style introduction to Einstein summation notation with rules, conventions, simplification methods, Kronecker delta, Levi-Civita symbol, and core identities.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      var stored = window.localStorage.getItem("sarwinTheme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom-style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body class="page-physics page-physics-note">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="mobile-bar">
+      <a class="mobile-brand" href="../index.html">
+        <strong>Sarwin Chandran</strong>
+        <span>Discover Me</span>
+      </a>
+      <div class="mobile-actions">
+        <button class="mobile-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="sr-only" data-theme-label>Switch to midnight mode</span>
+          <span class="sr-only" data-theme-state>Paper</span>
+        </button>
+        <button class="mobile-toggle" type="button" data-menu-toggle aria-controls="site-rail" aria-expanded="false">
+          <span class="mobile-toggle__bars" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="site-rail" id="site-rail">
+      <div class="rail-inner">
+        <a class="brandmark" href="../index.html">
+          <span class="brandmark__name">Sarwin Chandran</span>
+          <span class="brandmark__tag">Discover Me</span>
+        </a>
+
+        <p class="rail-summary">A page for tensor index notation, simplification patterns, and the identities that show up repeatedly in physics.</p>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="../physics.html" class="is-current" aria-current="page">Physics</a>
+          <a href="../codes.html">Code</a>
+          <a href="../artworks.html">Art</a>
+          <a href="../captures.html">Captures</a>
+          <a href="../creatives.html">Creatives</a>
+          <a href="../blog.html">Blog</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span data-theme-label>Switch to midnight mode</span>
+          <span class="theme-toggle__status">
+            <span class="theme-toggle__dot" aria-hidden="true"></span>
+            <span data-theme-state>Paper</span>
+          </span>
+        </button>
+      </div>
+    </aside>
+
+    <button class="drawer-scrim" type="button" data-drawer-close aria-label="Close navigation"></button>
+
+    <main class="site-main" id="main">
+      <article class="page">
+        <section class="section" id="overview" data-reveal>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Physics foundations</span>
+              <h1 class="hero-title">Einstein summation notation: the rules, symbols, and identities that make tensor expressions readable.</h1>
+              <p class="lead">Read it in order: rules, simplification, symbols, and applications.</p>
+              <div class="chip-row">
+                <span class="chip">Tensor notation</span>
+                <span class="chip">Index discipline</span>
+                <span class="chip">Identity toolbox</span>
+              </div>
+              <div class="button-row">
+                <a class="button-primary" href="#rules">Start with the rules</a>
+                <a class="button-secondary" href="#simplification">See simplification</a>
+                <a class="button-ghost" href="../physics.html">Back to Physics page</a>
+              </div>
+            </div>
+
+            <div class="hero-side">
+              <section class="table-card">
+                <span class="panel-label">Reading order</span>
+                <dl>
+                  <div>
+                    <dt>1. Read the rules</dt>
+                    <dd>Learn what counts as a legal index expression.</dd>
+                  </div>
+                  <div>
+                    <dt>2. Simplify carefully</dt>
+                    <dd>Keep free indices visible and contract the rest.</dd>
+                  </div>
+                  <div>
+                    <dt>3. Keep identities nearby</dt>
+                    <dd>Delta and Levi-Civita are the main tools you will use repeatedly.</dd>
+                  </div>
+                </dl>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <nav class="page-nav section" aria-label="On this page" data-page-nav data-reveal>
+          <a href="#overview">Overview</a>
+          <a href="#rules">Rules</a>
+          <a href="#simplification">Simplification</a>
+          <a href="#symbols">Symbols</a>
+          <a href="#identities">Identities</a>
+          <a href="#applications">Applications</a>
+          <a href="#checklist">Checklist</a>
+        </nav>
+
+        <section class="section" id="rules" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Step 1</span>
+            <h2 class="section-title">The rule set comes first.</h2>
+          </header>
+
+          <div class="table-card">
+            <span class="panel-label">How Einstein notation behaves</span>
+            <div class="math-table-wrap">
+              <table class="math-table">
+                <thead>
+                  <tr>
+                    <th>Rule</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Repeated index</td>
+                    <td>One repeated index in a term means sum over it.</td>
+                    <td>\(A_iB_i = \sum_i A_iB_i\)</td>
+                  </tr>
+                  <tr>
+                    <td>Free index</td>
+                    <td>Free indices must match on both sides of an equation.</td>
+                    <td>\(T_{ij}v_j = w_i\)</td>
+                  </tr>
+                  <tr>
+                    <td>Dummy index</td>
+                    <td>A dummy index is local and may be renamed.</td>
+                    <td>\(A_iB_i = A_jB_j\)</td>
+                  </tr>
+                  <tr>
+                    <td>Index count</td>
+                    <td>No index may appear more than twice in one term.</td>
+                    <td>\(A_iB_iC_i\) is invalid</td>
+                  </tr>
+                  <tr>
+                    <td>Index position</td>
+                    <td>Upper and lower indices matter in tensor calculus.</td>
+                    <td>\(a_i = g_{ij}a^j\)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="simplification" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Step 2</span>
+            <h2 class="section-title">Simplify by protecting the free indices and contracting the rest.</h2>
+          </header>
+
+          <div class="table-card">
+            <span class="panel-label">A reliable simplification sequence</span>
+            <div class="math-table-wrap">
+              <table class="math-table">
+                <thead>
+                  <tr>
+                    <th>Move</th>
+                    <th>What it does</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark free indices</td>
+                    <td>These must survive to the final expression.</td>
+                    <td>\(T_{ij}v_j\) keeps the free index \(i\)</td>
+                  </tr>
+                  <tr>
+                    <td>Identify dummy pairs</td>
+                    <td>Each repeated pair stands for one sum.</td>
+                    <td>\(\delta_{ij}A_j = A_i\)</td>
+                  </tr>
+                  <tr>
+                    <td>Apply identities early</td>
+                    <td>Kronecker delta usually collapses terms first.</td>
+                    <td>\(\delta_{ij}\delta_{jk}A_k = A_i\)</td>
+                  </tr>
+                  <tr>
+                    <td>Use symmetry</td>
+                    <td>Symmetric and antisymmetric pieces can cancel.</td>
+                    <td>\(\epsilon_{ijk}a_ja_k = 0\)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="table-card block-gap">
+            <span class="panel-label">Worked checks</span>
+            <div class="math-table-wrap">
+              <table class="math-table">
+                <thead>
+                  <tr>
+                    <th>Expression</th>
+                    <th>Result</th>
+                    <th>Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>\(A_i + B_i\)</td>
+                    <td>Valid</td>
+                    <td>Same free index structure.</td>
+                  </tr>
+                  <tr>
+                    <td>\(A_i + B_j\)</td>
+                    <td>Invalid</td>
+                    <td>The free indices do not match.</td>
+                  </tr>
+                  <tr>
+                    <td>\(A_iB_iC_i\)</td>
+                    <td>Invalid</td>
+                    <td>Index \(i\) appears three times in one term.</td>
+                  </tr>
+                  <tr>
+                    <td>\(\delta_{ii}\)</td>
+                    <td>\(n\)</td>
+                    <td>Trace of the identity tensor.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="symbols" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Step 3</span>
+            <h2 class="section-title">The two symbols used most often.</h2>
+          </header>
+
+          <div class="table-card">
+            <span class="panel-label">Symbol sheet</span>
+            <div class="math-table-wrap">
+              <table class="math-table">
+                <thead>
+                  <tr>
+                    <th>Symbol</th>
+                    <th>Definition</th>
+                    <th>Common use</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>\(\delta_{ij}\)</td>
+                    <td>1 when \(i=j\), otherwise 0.</td>
+                    <td>Acts like the identity matrix.</td>
+                  </tr>
+                  <tr>
+                    <td>\(\epsilon_{ijk}\)</td>
+                    <td>Completely antisymmetric in 3D.</td>
+                    <td>Encodes cross products and orientation.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="symbol-stack">
+            <article class="notebook-note notebook-note--subtle">
+              <h3 class="notebook-subhead">Kronecker delta in practice</h3>
+              <p class="math-display">\[ \delta_{ij}A_j = A_i, \qquad \delta_{ij}\delta_{jk} = \delta_{ik}, \qquad \frac{\partial x_i}{\partial x_j}=\delta_{ij} \]</p>
+            </article>
+
+            <article class="notebook-note notebook-note--subtle">
+              <h3 class="notebook-subhead">Levi-Civita in practice</h3>
+              <p class="math-display">\[
+                \epsilon_{ijk}=\begin{cases}
+                +1 & \text{even permutation of }(123)\\
+                -1 & \text{odd permutation of }(123)\\
+                0 & \text{if any indices repeat}
+                \end{cases}
+              \]</p>
+              <p class="math-display">\[ (a\times b)_i = \epsilon_{ijk}a_jb_k, \qquad (\nabla\times A)_i = \epsilon_{ijk}\partial_j A_k \]</p>
+              <p class="math-display">\[ \epsilon_{ijk}\epsilon_{imn}=\delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km} \]</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="identities" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Step 4</span>
+            <h2 class="section-title">Keep these identities nearby when you work.</h2>
+          </header>
+
+          <div class="table-card">
+            <span class="panel-label">Identity sheet</span>
+            <div class="math-table-wrap">
+              <table class="math-table">
+                <thead>
+                  <tr>
+                    <th>Identity</th>
+                    <th>Use</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>\(\epsilon_{i_1\cdots i_n}\epsilon_{j_1\cdots j_n} = \det[\delta_{i_a j_b}]\)</td>
+                    <td>General antisymmetric contraction in any dimension.</td>
+                  </tr>
+                  <tr>
+                    <td>\(\epsilon_{i_1\cdots i_n}\epsilon_{i_1\cdots i_n}=n!\)</td>
+                    <td>Norm contraction of the Levi-Civita symbol.</td>
+                  </tr>
+                  <tr>
+                    <td>\(\epsilon_{ij}\epsilon_{kj}=\delta_{ik}\)</td>
+                    <td>Compact 2D contraction identity.</td>
+                  </tr>
+                  <tr>
+                    <td>\(T_{ii}=\mathrm{tr}(T), \qquad \partial_i T_i\)</td>
+                    <td>Trace and divergence are both contractions.</td>
+                  </tr>
+                  <tr>
+                    <td>\(S_{ij}\epsilon_{ijk}=0\) when \(S_{ij}=S_{ji}\)</td>
+                    <td>A symmetric tensor vanishes against an antisymmetric one.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="applications" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Step 5</span>
+            <h2 class="section-title">Where the notation shows up in physics.</h2>
+          </header>
+
+          <div class="table-card">
+            <span class="panel-label">Where the notation shows up</span>
+            <div class="math-table-wrap">
+              <table class="math-table">
+                <thead>
+                  <tr>
+                    <th>Area</th>
+                    <th>Example</th>
+                    <th>Why it helps</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Classical mechanics</td>
+                    <td>\(L_i=\epsilon_{ijk}x_jp_k\)</td>
+                    <td>Keeps angular momentum structure compact.</td>
+                  </tr>
+                  <tr>
+                    <td>Electromagnetism</td>
+                    <td>\((\nabla\times E)_i=\epsilon_{ijk}\partial_jE_k\)</td>
+                    <td>Turns vector identities into index checks.</td>
+                  </tr>
+                  <tr>
+                    <td>Continuum mechanics</td>
+                    <td>\(\partial_j\sigma_{ij}+f_i=\rho a_i\)</td>
+                    <td>Free-index consistency becomes immediate.</td>
+                  </tr>
+                  <tr>
+                    <td>Relativity</td>
+                    <td>\(a_i=g_{ij}a^j\)</td>
+                    <td>Shows how the metric moves indices.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="checklist" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">Final check</span>
+            <h2 class="section-title">Before I trust the line, I check the indices.</h2>
+          </header>
+
+          <div class="table-card">
+            <span class="panel-label">Final checklist</span>
+            <div class="math-table-wrap">
+              <table class="math-table">
+                <thead>
+                  <tr>
+                    <th>Check</th>
+                    <th>Pass condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Free indices</td>
+                    <td>They match on both sides.</td>
+                  </tr>
+                  <tr>
+                    <td>Dummy indices</td>
+                    <td>Each appears exactly twice in one term.</td>
+                  </tr>
+                  <tr>
+                    <td>Mixed roles</td>
+                    <td>No symbol is both free and dummy in the same term.</td>
+                  </tr>
+                  <tr>
+                    <td>Index position</td>
+                    <td>Upper and lower placement is consistent when relevant.</td>
+                  </tr>
+                  <tr>
+                    <td>Symmetry</td>
+                    <td>Use symmetry and antisymmetry to remove zero terms early.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="button-row final-actions">
+              <a class="button-secondary" href="../physics.html">Return to Physics page</a>
+              <a class="button-ghost" href="#overview">Back to top</a>
+            </div>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span>&copy; <span data-year></span> Sarwin Chandran. Einstein summation primer.</span>
+          <a href="../physics.html">Physics notebook</a>
+        </footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Blog Post Template | Sarwin Chandran</title>
+  <meta name="description" content="Blank standalone template for long-form blog posts.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      var stored = window.localStorage.getItem("sarwinTheme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom-style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body class="page-blog page-post-template">
+  <a class="skip-link" href="#main">Skip to post</a>
+
+  <header class="post-template-top">
+    <div class="post-template-top__inner">
+      <a class="post-template-top__brand" href="../blog.html">
+        Sarwin Chandran
+        <span>Blog template</span>
+      </a>
+      <div class="post-template-top__actions">
+        <a class="post-template-top__link" href="../blog.html">Back to blog</a>
+        <button class="post-theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="post-theme-toggle__label" data-theme-state>Paper</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="post-template-main" id="main">
+    <article class="post-sheet" data-reveal>
+      <span class="post-sheet__kicker">Template draft</span>
+      <h1 class="post-sheet__title">[Blog post title goes here]</h1>
+      <p class="post-sheet__subtitle">Use this page as your default long-form blog format. Replace this subtitle with a one- to two-sentence introduction that frames the post clearly.</p>
+
+      <div class="post-sheet__meta">
+        <span class="post-sheet__meta-item">Date: DD Mon YYYY</span>
+        <span class="post-sheet__meta-item">Reading time: 5-8 min</span>
+        <span class="post-sheet__meta-item">Category: Build log / Reflection</span>
+      </div>
+
+      <section class="post-sheet__content">
+        <h2>Opening scene</h2>
+        <p>Start with the exact moment that made this post necessary. Substack-style posts feel strongest when they begin with a scene, not a summary.</p>
+
+        <p>Then explain what changed and why this mattered. Keep paragraphs readable and specific so this page stays useful as an archive, not just an announcement.</p>
+
+        <blockquote>Template cue: Name what resisted you, what you learned, and what changed in your next decision.</blockquote>
+
+        <h2>Process and turning point</h2>
+        <p>Document the middle honestly. Include failed attempts, corrections, or assumptions that did not hold. This section is usually where the real value is for future-you.</p>
+
+        <h2>Next move</h2>
+        <p>End with a concrete next step. Avoid polished endings that hide uncertainty.</p>
+      </section>
+    </article>
+
+    <aside class="post-template-aside" data-reveal>
+      <h2>How to use this page</h2>
+      <ul>
+        <li>Duplicate this file for each new post inside <code>blog-posts/</code>.</li>
+        <li>Keep title, subtitle, and metadata updated first.</li>
+        <li>Replace section copy while preserving reading rhythm.</li>
+        <li>Link the new file from the matching card in <code>blog.html</code>.</li>
+      </ul>
+      <p>This keeps every blog post in one clean folder and gives all entries one consistent reading experience.</p>
+    </aside>
+  </main>
+
+  <footer class="post-template-footer">
+    <span>&copy; <span data-year></span> Sarwin Chandran. Blog template.</span>
+    <a href="../blog.html">Return to blog index</a>
+  </footer>
+</body>
+</html>

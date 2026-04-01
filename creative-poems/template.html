@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Poem Template | Sarwin Chandran</title>
+  <meta name="description" content="Blank standalone template for poems and lyric fragments.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      var stored = window.localStorage.getItem("sarwinTheme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom-style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body class="page-creatives page-post-template">
+  <a class="skip-link" href="#main">Skip to poem</a>
+
+  <header class="post-template-top">
+    <div class="post-template-top__inner">
+      <a class="post-template-top__brand" href="../creatives.html">
+        Sarwin Chandran
+        <span>Poem template</span>
+      </a>
+      <div class="post-template-top__actions">
+        <a class="post-template-top__link" href="../creatives.html">Back to creatives</a>
+        <button class="post-theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="post-theme-toggle__label" data-theme-state>Paper</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="post-template-main" id="main">
+    <article class="post-sheet post-sheet--poem" data-reveal>
+      <span class="post-sheet__kicker">Poem draft</span>
+      <h1 class="post-sheet__title">[Poem title goes here]</h1>
+      <p class="post-sheet__subtitle">A standalone reading page for poems in the Creatives section. Replace this line with a short context note, or leave it out for a pure reading presentation.</p>
+
+      <div class="post-sheet__meta">
+        <span class="post-sheet__meta-item">Date: DD Mon YYYY</span>
+        <span class="post-sheet__meta-item">Collection: Creatives</span>
+        <span class="post-sheet__meta-item">Type: Poem / Fragment</span>
+      </div>
+
+      <section class="post-sheet__content">
+        <div class="poem-body">
+          <p>First line of the stanza
+Second line continues the motion
+Third line breaks toward the image</p>
+
+          <p>Next stanza can shift pace
+or narrow into one precise memory
+before the ending opens again</p>
+
+          <p class="poem-note">Template cue: keep each stanza in its own paragraph and use line breaks for rhythm.</p>
+        </div>
+      </section>
+    </article>
+
+    <aside class="post-template-aside" data-reveal>
+      <h2>How to use this page</h2>
+      <ul>
+        <li>Duplicate this file for each poem in <code>creative-poems/</code>.</li>
+        <li>Replace title, metadata, and stanza text.</li>
+        <li>Keep one stanza per paragraph for clean spacing.</li>
+        <li>Link new poem pages from the Writing cards in <code>creatives.html</code>.</li>
+      </ul>
+      <p>This keeps poem pages in one dedicated folder with a consistent reading format.</p>
+    </aside>
+  </main>
+
+  <footer class="post-template-footer">
+    <span>&copy; <span data-year></span> Sarwin Chandran. Poem template.</span>
+    <a href="../creatives.html">Return to creatives index</a>
+  </footer>
+</body>
+</html>

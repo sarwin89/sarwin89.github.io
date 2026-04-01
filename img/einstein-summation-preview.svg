@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Einstein summation notation preview</title>
+  <desc id="desc">Preview artwork showing key formulas for Einstein summation notation, Kronecker delta, and Levi-Civita identities.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7f2e7"/>
+      <stop offset="100%" stop-color="#e8eef9"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f3659"/>
+      <stop offset="100%" stop-color="#2f507f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#375b89" stroke-width="1">
+    <path d="M0 96H1200"/>
+    <path d="M0 176H1200"/>
+    <path d="M0 256H1200"/>
+    <path d="M0 336H1200"/>
+    <path d="M0 416H1200"/>
+    <path d="M0 496H1200"/>
+    <path d="M0 576H1200"/>
+    <path d="M0 656H1200"/>
+    <path d="M96 0V760"/>
+    <path d="M216 0V760"/>
+    <path d="M336 0V760"/>
+    <path d="M456 0V760"/>
+    <path d="M576 0V760"/>
+    <path d="M696 0V760"/>
+    <path d="M816 0V760"/>
+    <path d="M936 0V760"/>
+    <path d="M1056 0V760"/>
+  </g>
+
+  <rect x="72" y="64" width="1056" height="632" rx="30" fill="#fbf9f4" stroke="#2d4e7a" stroke-width="3"/>
+
+  <text x="124" y="150" fill="url(#ink)" font-family="Georgia, serif" font-size="56" font-weight="700">Einstein Summation Notation</text>
+  <text x="126" y="190" fill="#445f86" font-family="Arial, sans-serif" font-size="24">Rules, simplification, Kronecker delta, Levi-Civita identities</text>
+
+  <g fill="#1f3555" font-family="Consolas, 'Courier New', monospace" font-size="34">
+    <text x="126" y="286">a_i b_i = sum_(i=1)^n a_i b_i</text>
+    <text x="126" y="358">delta_ij a_j = a_i</text>
+    <text x="126" y="430">epsilon_ijk a_j a_k = 0</text>
+    <text x="126" y="502">epsilon_ijk epsilon_imn = delta_jm delta_kn - delta_jn delta_km</text>
+  </g>
+
+  <g fill="#2a4a74" font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    <text x="126" y="592">Physics notebook preview</text>
+  </g>
+  <rect x="126" y="616" width="480" height="20" rx="10" fill="#3a5f8f" opacity="0.75"/>
+  <rect x="620" y="616" width="320" height="20" rx="10" fill="#6f8fb5" opacity="0.55"/>
+</svg>

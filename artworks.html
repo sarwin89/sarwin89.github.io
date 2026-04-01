@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Art Archive | Sarwin Chandran</title>
-  <meta name="description" content="Art page of Sarwin Chandran with finished pieces, process notes, and ideas for future series.">
+  <meta name="description" content="Art page of Sarwin Chandran with anime drawings, creator sections, and a fullscreen gallery journal.">
   <meta name="color-scheme" content="light dark">
   <script>
     (function() {
@@ -48,7 +48,9 @@
           <span class="brandmark__name">Sarwin Chandran</span>
           <span class="brandmark__tag">Discover Me</span>
         </a>
-        <p class="rail-summary">The Art page keeps finished pieces, studies, and visual decisions in one place without losing the process around them.</p>
+
+        <p class="rail-summary">A living visual archive: anime studies, creator identities, and future craft experiments collected in one journal wall.</p>
+
         <nav class="site-nav" aria-label="Primary">
           <a href="index.html">Home</a>
           <a href="physics.html">Physics</a>
@@ -58,6 +60,7 @@
           <a href="creatives.html">Creatives</a>
           <a href="blog.html">Blog</a>
         </nav>
+
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
           <span data-theme-label>Switch to midnight mode</span>
           <span class="theme-toggle__status">
@@ -75,43 +78,43 @@
         <section class="section" id="overview" data-reveal>
           <div class="hero-grid">
             <div class="hero-copy">
-              <span class="eyebrow">Art</span>
-              <h1 class="hero-title">Finished pieces, studies, and visual notes that explain <em>what changed between sketch and final.</em></h1>
-              <p class="lead">I wanted the art room to feel more like a chosen wall than a feed. The image matters, but so does the reason it worked: lighting, silhouette, restraint, gesture, or color.</p>
+              <span class="eyebrow">Art archive</span>
+              <h1 class="hero-title">Anime drawings, visual identities, and future craft sections that stay personal while still reading as an <em>academic archive.</em></h1>
+              <p class="lead">Tap any piece to open a fullscreen studio view. The image opens with a soft fade, the background blurs out, and the context panel keeps references and notes beside the artwork like a desktop post viewer.</p>
               <div class="chip-row">
-                <span class="chip">Character work</span>
-                <span class="chip">Color studies</span>
-                <span class="chip">Process notes</span>
+                <span class="chip">Anime drawings</span>
+                <span class="chip">KnightPrime &amp; OzzyRandy</span>
+                <span class="chip">Kirigami (incoming)</span>
               </div>
               <div class="button-row">
-                <a class="button-primary" href="#gallery">Open the gallery</a>
-                <a class="button-secondary" href="#process">Read the process notes</a>
-                <a class="button-ghost" href="index.html">Back to home</a>
+                <a class="button-primary" href="#anime-drawings">Open anime gallery</a>
+                <a class="button-secondary" href="#other-icons">Open identity section</a>
+                <a class="button-ghost" href="#kirigami">Jump to kirigami</a>
               </div>
             </div>
 
             <div class="hero-side">
               <figure class="snapshot">
                 <div class="hero-frame">
-                  <img src="img/Art/Prime.jpg" alt="Prime artwork by Sarwin Chandran" loading="eager">
+                  <img src="img/Art/viewer/Gojo.jpg" alt="Gojo artwork preview from Sarwin's archive" loading="eager">
                 </div>
-                <figcaption>A useful art page keeps the visual impact and the decision-making in the same frame.</figcaption>
+                <figcaption>Gallery layout tuned for both A4 portrait and A4 landscape works across desktop and phone screens.</figcaption>
               </figure>
 
               <section class="table-card">
-                <span class="panel-label">What I try to keep beside a piece</span>
+                <span class="panel-label">Archive logic</span>
                 <dl>
                   <div>
-                    <dt>Intent</dt>
-                    <dd>What the image was trying to do emotionally or visually.</dd>
+                    <dt>Piece</dt>
+                    <dd>A single artwork entry with orientation-aware sizing.</dd>
                   </div>
                   <div>
-                    <dt>Change</dt>
-                    <dd>The one adjustment that made the piece stronger than the sketch.</dd>
+                    <dt>Context</dt>
+                    <dd>Series + character notes that stay attached to the visual.</dd>
                   </div>
                   <div>
-                    <dt>Lesson</dt>
-                    <dd>What I would carry into the next drawing instead of relearning it.</dd>
+                    <dt>Signal</dt>
+                    <dd>Local like memory per device for quick feedback as the archive grows.</dd>
                   </div>
                 </dl>
               </section>
@@ -121,173 +124,310 @@
 
         <nav class="page-nav section" aria-label="On this page" data-page-nav data-reveal>
           <a href="#overview">Overview</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#process">Process</a>
-          <a href="#series">Series seeds</a>
+          <a href="#anime-drawings">Anime Drawings</a>
+          <a href="#other-icons">KnightPrime &amp; OzzyRandy</a>
+          <a href="#kirigami">Kirigami</a>
         </nav>
 
-        <section class="section" id="gallery" data-reveal>
+        <section class="section" id="anime-drawings" data-reveal>
           <header class="section-header">
-            <span class="eyebrow">Gallery wall</span>
-            <h2 class="section-title">Images that deserve a stronger home than a folder and enough notes to remember why they worked.</h2>
+            <span class="eyebrow">Anime drawings</span>
+            <h2 class="section-title">Popular characters reinterpreted through your drawing style, presented in a mixed A4 portrait and landscape gallery.</h2>
           </header>
-
-          <div class="gallery-grid">
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Prime.jpg" data-alt="Prime artwork by Sarwin Chandran" data-title="Prime" data-description="A piece about restraint, clean finish, and trusting the composition enough to stop adding.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Prime.jpg" alt="Prime artwork preview" loading="lazy">
+          <div class="art-grid">
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="anya" data-image="img/Art/viewer/Anya.jpg" data-alt="Anya Forger artwork by Sarwin Chandran" data-title="Anya Forger" data-description="Spy x Family fan art study." data-series="Spy x Family" data-format="A4 landscape" data-character-note="Anya is the telepath child at the center of Operation Strix, balancing comedy, empathy, and surprising courage." data-studio-note="Expression and eye rhythm study with softer color transitions.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Anya.jpg" alt="Anya Forger artwork preview" loading="lazy">
                 </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Finished piece</span>
-                  <h3 class="card-title">Prime</h3>
-                  <p>The kind of drawing that teaches patience rather than speed.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Rengoku.jpg" data-alt="Rengoku artwork by Sarwin Chandran" data-title="Rengoku" data-description="Strong color and stronger energy, with palette doing as much emotional work as line.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Rengoku.jpg" alt="Rengoku artwork preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Color-driven piece</span>
-                  <h3 class="card-title">Rengoku</h3>
-                  <p>Useful for studying how lighting can carry the whole mood.</p>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Spy x Family</span>
+                  <h3 class="card-title">Anya Forger</h3>
+                  <p>Telepath child lead with playful expression contrast.</p>
                 </div>
               </button>
             </article>
 
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Gojo.jpg" data-alt="Gojo artwork by Sarwin Chandran" data-title="Gojo" data-description="A style-forward piece focused on silhouette control and knowing exactly how much detail was enough.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Gojo.jpg" alt="Gojo artwork preview" loading="lazy">
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="chainsaw" data-image="img/Art/viewer/Chainsaw.jpg" data-alt="Chainsaw Man artwork by Sarwin Chandran" data-title="Chainsaw Form Study" data-description="Chainsaw Man action-focused fan art." data-series="Chainsaw Man" data-format="A4 landscape" data-character-note="Chainsaw Man's identity is built around Denji's hybrid form and raw momentum against devils." data-studio-note="Value-blocking focused on motion silhouettes and blade direction.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Chainsaw.jpg" alt="Chainsaw artwork preview" loading="lazy">
                 </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Character study</span>
-                  <h3 class="card-title">Gojo</h3>
-                  <p>Where detail only mattered when it helped the silhouette read faster.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Maki.jpg" data-alt="Maki artwork by Sarwin Chandran" data-title="Maki" data-description="A study in balancing pose, gesture, and finish without losing the life of the sketch.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Maki.jpg" alt="Maki artwork preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Pose study</span>
-                  <h3 class="card-title">Maki</h3>
-                  <p>The piece that made pressure, shape language, and body balance easier to talk about.</p>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Chainsaw Man</span>
+                  <h3 class="card-title">Chainsaw Form Study</h3>
+                  <p>Aggressive shape language and speed-driven composition.</p>
                 </div>
               </button>
             </article>
 
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Zenitsu.jpg" data-alt="Zenitsu artwork by Sarwin Chandran" data-title="Zenitsu" data-description="A more energetic frame where motion and contrast mattered more than perfect tidiness.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Zenitsu.jpg" alt="Zenitsu artwork preview" loading="lazy">
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="denjireeze" data-image="img/Art/viewer/DenjiReeze.jpg" data-alt="Denji and Reze artwork by Sarwin Chandran" data-title="Denji x Reze" data-description="Character contrast from Chainsaw Man." data-series="Chainsaw Man" data-format="A4 portrait" data-character-note="Denji and Reze represent one of Chainsaw Man's most emotionally conflicted dynamics: intimacy, deception, and survival." data-studio-note="Portrait framing for emotional proximity, with split tone cues.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/DenjiReeze.jpg" alt="Denji and Reze artwork preview" loading="lazy">
                 </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Motion-heavy piece</span>
-                  <h3 class="card-title">Zenitsu</h3>
-                  <p>Useful for remembering that energy can matter more than polish.</p>
-                </div>
-              </button>
-            </article>
-
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Anya.jpg" data-alt="Anya artwork by Sarwin Chandran" data-title="Anya" data-description="A lighter character study with expression doing more work than complexity.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Anya.jpg" alt="Anya artwork preview" loading="lazy">
-                </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Expression study</span>
-                  <h3 class="card-title">Anya</h3>
-                  <p>Proof that playful pieces still deserve a serious place in the archive.</p>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Chainsaw Man</span>
+                  <h3 class="card-title">Denji x Reze</h3>
+                  <p>Tender versus dangerous mood contrast in one frame.</p>
                 </div>
               </button>
             </article>
 
-            <article class="gallery-card">
-              <button type="button" data-lightbox-trigger data-image="img/Art/Pochita.jpg" data-alt="Pochita artwork by Sarwin Chandran" data-title="Pochita" data-description="A smaller piece that justifies itself through charm, personality, and clarity of shape.">
-                <div class="gallery-card__frame">
-                  <img src="img/Art/Pochita.jpg" alt="Pochita artwork preview" loading="lazy">
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="eren" data-image="img/Art/viewer/Eren.jpg" data-alt="Eren Yeager artwork by Sarwin Chandran" data-title="Eren Yeager" data-description="Attack on Titan character portrait." data-series="Attack on Titan" data-format="A4 portrait" data-character-note="Eren evolves from revenge-driven protagonist to one of anime's most morally complex anti-heroes." data-studio-note="Face anatomy and tension lines centered around a narrow value range.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Eren.jpg" alt="Eren Yeager artwork preview" loading="lazy">
                 </div>
-                <div class="gallery-card__content">
-                  <span class="card-kicker">Small detour</span>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Attack on Titan</span>
+                  <h3 class="card-title">Eren Yeager</h3>
+                  <p>Intensity-focused portrait with controlled negative space.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="gaara" data-image="img/Art/viewer/Gaara.jpg" data-alt="Gaara artwork by Sarwin Chandran" data-title="Gaara" data-description="Naruto fan art portrait." data-series="Naruto" data-format="A4 portrait" data-character-note="Gaara starts as a feared jinchuriki and becomes one of Naruto's strongest examples of emotional growth and leadership." data-studio-note="High-contrast eye focus and forehead glyph detailing.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Gaara.jpg" alt="Gaara artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Naruto</span>
+                  <h3 class="card-title">Gaara</h3>
+                  <p>Calm expression layered over a traumatic backstory cue.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="gojo" data-image="img/Art/viewer/Gojo.jpg" data-alt="Satoru Gojo artwork by Sarwin Chandran" data-title="Satoru Gojo" data-description="Jujutsu Kaisen fan art." data-series="Jujutsu Kaisen" data-format="A4 landscape" data-character-note="Gojo is Jujutsu Kaisen's strongest sorcerer and teacher figure, known for Limitless and Six Eyes." data-studio-note="Silhouette-first rendering with controlled highlights around eye focus.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Gojo.jpg" alt="Gojo artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Jujutsu Kaisen</span>
+                  <h3 class="card-title">Satoru Gojo</h3>
+                  <p>Clean confidence pose with bright focal accents.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="gojo2" data-image="img/Art/viewer/Gojo2.jpg" data-alt="Gojo portrait variant by Sarwin Chandran" data-title="Gojo Variant" data-description="Second Gojo portrait experiment." data-series="Jujutsu Kaisen" data-format="A4 portrait" data-character-note="This variant explores Gojo's split identity between playful mentor and overwhelming combat force." data-studio-note="Close portrait framing with cooler value drift and sharper contour edges.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Gojo2.jpg" alt="Gojo portrait variant preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Jujutsu Kaisen</span>
+                  <h3 class="card-title">Gojo Variant</h3>
+                  <p>Alternative framing that pushes character duality.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="gojogeto" data-image="img/Art/viewer/GojoGeto.jpg" data-alt="Gojo and Geto artwork by Sarwin Chandran" data-title="Gojo &amp; Geto" data-description="Dual character composition." data-series="Jujutsu Kaisen" data-format="A4 landscape" data-character-note="Gojo and Geto are central to Jujutsu Kaisen's ideological conflict: reform versus rejection of society." data-studio-note="Two-subject balance with opposing directional lighting.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/GojoGeto.jpg" alt="Gojo and Geto artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Jujutsu Kaisen</span>
+                  <h3 class="card-title">Gojo &amp; Geto</h3>
+                  <p>Friendship and ideological fracture in one layout.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="hashitobi" data-image="img/Art/viewer/HashiTobi.jpg" data-alt="Hashirama and Tobirama artwork by Sarwin Chandran" data-title="Hashirama &amp; Tobirama" data-description="Founders-era Naruto duo study." data-series="Naruto" data-format="A4 portrait" data-character-note="Hashirama and Tobirama Senju represent Konoha's founding ideals: peace-building vision and institutional strategy." data-studio-note="Twin-subject staging with historical palette references.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/HashiTobi.jpg" alt="Hashirama and Tobirama artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Naruto</span>
+                  <h3 class="card-title">Hashirama &amp; Tobirama</h3>
+                  <p>Founding-era duo with complementary posture language.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="luffy" data-image="img/Art/viewer/Luffy.jpg" data-alt="Monkey D. Luffy artwork by Sarwin Chandran" data-title="Monkey D. Luffy" data-description="One Piece fan art." data-series="One Piece" data-format="A4 landscape" data-character-note="Luffy is One Piece's pirate lead whose freedom-first mindset drives the Straw Hat crew's entire journey." data-studio-note="Open composition with movement toward the horizon line.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Luffy.jpg" alt="Monkey D. Luffy artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">One Piece</span>
+                  <h3 class="card-title">Monkey D. Luffy</h3>
+                  <p>Freedom-heavy attitude captured through broad gesture lines.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="maaki" data-image="img/Art/viewer/Maaki.jpg" data-alt="Maki Zenin artwork by Sarwin Chandran" data-title="Maki Zenin" data-description="Jujutsu Kaisen combat character study." data-series="Jujutsu Kaisen" data-format="A4 portrait" data-character-note="Maki's arc is built around physical excellence and resolve despite lacking conventional cursed energy." data-studio-note="Body-weight and stance study with minimal accessory distraction.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Maaki.jpg" alt="Maki Zenin artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Jujutsu Kaisen</span>
+                  <h3 class="card-title">Maki Zenin</h3>
+                  <p>Discipline, strength, and grounded pose control.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="makima" data-image="img/Art/viewer/Makima.jpg" data-alt="Makima artwork by Sarwin Chandran" data-title="Makima" data-description="Chainsaw Man antagonist portrait." data-series="Chainsaw Man" data-format="A4 landscape" data-character-note="Makima is the Control Devil, presented with calm authority that hides coercive power." data-studio-note="Composed framing with low-noise background and attention on gaze.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Makima.jpg" alt="Makima artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Chainsaw Man</span>
+                  <h3 class="card-title">Makima</h3>
+                  <p>Controlled stillness used as the central tension point.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="pochita" data-image="img/Art/viewer/Pochita.jpg" data-alt="Pochita artwork by Sarwin Chandran" data-title="Pochita" data-description="Chainsaw Man companion character piece." data-series="Chainsaw Man" data-format="A4 portrait" data-character-note="Pochita is Denji's chainsaw devil companion and the emotional core of Denji's transformation." data-studio-note="Rounded form language with bright accent hits and soft edge cleanup.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Pochita.jpg" alt="Pochita artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Chainsaw Man</span>
                   <h3 class="card-title">Pochita</h3>
-                  <p>Sometimes a compact drawing keeps the whole practice feeling alive.</p>
+                  <p>Cute form balance with mechanical edge details.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="rengoku" data-image="img/Art/viewer/Rengoku.jpg" data-alt="Kyojuro Rengoku artwork by Sarwin Chandran" data-title="Kyojuro Rengoku" data-description="Demon Slayer fan art with flame palette." data-series="Demon Slayer" data-format="A4 landscape" data-character-note="Rengoku, the Flame Hashira, is known for unwavering resolve and a strong protector ethos." data-studio-note="Warm-spectrum palette with directional flame rhythm.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Rengoku.jpg" alt="Kyojuro Rengoku artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Demon Slayer</span>
+                  <h3 class="card-title">Kyojuro Rengoku</h3>
+                  <p>Heat, conviction, and forward energy in color-first rendering.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="reze1" data-image="img/Art/viewer/Reze1.jpg" data-alt="Reze artwork by Sarwin Chandran" data-title="Reze" data-description="Bomb Girl arc inspired portrait." data-series="Chainsaw Man" data-format="A4 portrait" data-character-note="Reze appears as a gentle love interest but is revealed as the Bomb Devil hybrid in a tragic conflict arc." data-studio-note="Soft front lighting over a darker contour profile.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Reze1.jpg" alt="Reze artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Chainsaw Man</span>
+                  <h3 class="card-title">Reze</h3>
+                  <p>Romance-coded framing with underlying danger cues.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="sukuna" data-image="img/Art/viewer/Sukuna.jpg" data-alt="Ryomen Sukuna artwork by Sarwin Chandran" data-title="Ryomen Sukuna" data-description="Jujutsu Kaisen curse king study." data-series="Jujutsu Kaisen" data-format="A4 portrait" data-character-note="Sukuna is the King of Curses and one of Jujutsu Kaisen's core antagonistic forces." data-studio-note="Aggressive mark accents with high-contrast face mapping.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Sukuna.jpg" alt="Ryomen Sukuna artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Jujutsu Kaisen</span>
+                  <h3 class="card-title">Ryomen Sukuna</h3>
+                  <p>Antagonist dominance expressed through facial geometry.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="yoriichi" data-image="img/Art/viewer/Yoriichi.jpg" data-alt="Yoriichi Tsugikuni artwork by Sarwin Chandran" data-title="Yoriichi Tsugikuni" data-description="Demon Slayer origin-era character study." data-series="Demon Slayer" data-format="A4 portrait" data-character-note="Yoriichi is the legendary Sun Breathing swordsman and the historical benchmark of Demon Slayer swordsmanship." data-studio-note="Formal portrait weighting with restrained saturation.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/Yoriichi.jpg" alt="Yoriichi Tsugikuni artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Demon Slayer</span>
+                  <h3 class="card-title">Yoriichi Tsugikuni</h3>
+                  <p>Legacy-focused stillness with historical mood.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="yoritanji" data-image="img/Art/viewer/YoriTanji.jpg" data-alt="Yoriichi and Tanjiro inspired artwork by Sarwin Chandran" data-title="Yoriichi Echo in Tanjiro" data-description="Dual-generation Demon Slayer interpretation." data-series="Demon Slayer" data-format="A4 portrait" data-character-note="Tanjiro's journey carries visual and thematic echoes of Yoriichi's Sun Breathing legacy." data-studio-note="Dual-era motif with mirrored face and accessory rhythm.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/YoriTanji.jpg" alt="Yoriichi and Tanjiro artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Demon Slayer</span>
+                  <h3 class="card-title">Yoriichi Echo in Tanjiro</h3>
+                  <p>Legacy motif linking past and present demon slayers.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="zenitsu" data-image="img/Art/viewer/Zenitsu.jpg" data-alt="Zenitsu Agatsuma artwork by Sarwin Chandran" data-title="Zenitsu Agatsuma" data-description="Thunder-breathing inspired fan art." data-series="Demon Slayer" data-format="A4 landscape" data-character-note="Zenitsu is known for anxious personality shifts into precision lightning-speed combat when fully focused." data-studio-note="Lightning diagonals with high-energy compositional flow.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/Zenitsu.jpg" alt="Zenitsu Agatsuma artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Demon Slayer</span>
+                  <h3 class="card-title">Zenitsu Agatsuma</h3>
+                  <p>Electric pacing and direction-heavy shape rhythm.</p>
                 </div>
               </button>
             </article>
           </div>
         </section>
 
-        <section class="section" id="process" data-reveal>
-          <div class="split-grid">
-            <section class="panel panel--accent">
-              <span class="panel-label">Process notes</span>
-              <h2 class="panel-title">The most useful art notes are usually not technical tutorials. They are records of what decision changed the image.</h2>
-              <div class="prose">
-                <p>I want the archive to remember what actually helped: where lighting got cleaner, where the pose loosened up, or where I finally stopped overworking a face.</p>
-                <p>That makes the page useful later. It turns the archive from a wall of images into a record of practice.</p>
-              </div>
-            </section>
+        <section class="section" id="other-icons" data-reveal>
+          <header class="section-header">
+            <span class="eyebrow">KnightPrime &amp; OzzyRandy</span>
+            <h2 class="section-title">Dedicated identity shelf for your original or branded character works, separated from the anime archive.</h2>
+          </header>
+          <div class="art-grid art-grid--icons">
+            <article class="art-card art-card--landscape">
+              <button type="button" data-lightbox-trigger data-art-id="knightprime" data-image="img/Art/viewer/KnightPrime.jpg" data-alt="KnightPrime artwork by Sarwin Chandran" data-title="KnightPrime" data-description="Original identity visual." data-series="Creator Icon" data-format="A4 landscape" data-character-note="KnightPrime is positioned here as a custom persona branch, separate from fandom-based studies." data-studio-note="Identity-forward rendering with emblematic silhouette priority.">
+                <div class="art-card__frame art-card__frame--landscape">
+                  <img src="img/Art/previews/KnightPrime.jpg" alt="KnightPrime artwork preview" loading="lazy">
+                </div>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Creator icon</span>
+                  <h3 class="card-title">KnightPrime</h3>
+                  <p>Original identity piece with emblem-first composition.</p>
+                </div>
+              </button>
+            </article>
 
-            <section class="table-card">
-              <span class="panel-label">Questions I keep asking</span>
-              <dl>
-                <div>
-                  <dt>Does the silhouette read fast?</dt>
-                  <dd>If not, no amount of rendering will save the image.</dd>
+            <article class="art-card art-card--portrait">
+              <button type="button" data-lightbox-trigger data-art-id="ozzyrandy" data-image="img/Art/viewer/OzzyRandy.jpg" data-alt="OzzyRandy artwork by Sarwin Chandran" data-title="OzzyRandy" data-description="Original identity character artwork." data-series="Creator Icon" data-format="A4 portrait" data-character-note="OzzyRandy anchors a second personal identity lane that can expand with future pieces." data-studio-note="Portrait-centric icon language with strong edge hierarchy.">
+                <div class="art-card__frame art-card__frame--portrait">
+                  <img src="img/Art/previews/OzzyRandy.jpg" alt="OzzyRandy artwork preview" loading="lazy">
                 </div>
-                <div>
-                  <dt>Is color doing real work?</dt>
-                  <dd>Palette should push mood or focus, not sit there decoratively.</dd>
+                <div class="art-card__meta">
+                  <span class="card-kicker">Creator icon</span>
+                  <h3 class="card-title">OzzyRandy</h3>
+                  <p>Companion identity artwork for your personal universe.</p>
                 </div>
-                <div>
-                  <dt>Did the final pass help?</dt>
-                  <dd>Polish is only useful when it strengthens the image rather than flattening it.</dd>
-                </div>
-              </dl>
-            </section>
+              </button>
+            </article>
           </div>
         </section>
 
-        <section class="section" id="series" data-reveal>
+        <section class="section" id="kirigami" data-reveal>
           <header class="section-header">
-            <span class="eyebrow">Series seeds</span>
-            <h2 class="section-title">Ideas that are not full projects yet, but keep appearing often enough to deserve their own future shelf.</h2>
+            <span class="eyebrow">Kirigami (incoming)</span>
+            <h2 class="section-title">Reserved section for upcoming kirigami works, optimized for mostly square image entries.</h2>
           </header>
-
-          <div class="entry-grid">
-            <article class="entry-card">
-              <div class="entry-card__body">
-                <span class="entry-card__status">Seed idea</span>
-                <h3 class="entry-title">Controlled lighting studies</h3>
-                <p class="entry-copy">A series focused less on characters themselves and more on what lighting patterns do to emotion, clarity, and restraint.</p>
-              </div>
-            </article>
-
-            <article class="entry-card">
-              <div class="entry-card__body">
-                <span class="entry-card__status">Seed idea</span>
-                <h3 class="entry-title">Gesture before detail</h3>
-                <p class="entry-copy">A set of pieces built to preserve the energy of the first sketch all the way through the final rendering stage.</p>
-              </div>
-            </article>
-
-            <article class="entry-card">
-              <div class="entry-card__body">
-                <span class="entry-card__status">Seed idea</span>
-                <h3 class="entry-title">Quiet frames</h3>
-                <p class="entry-copy">More restrained work where composition, negative space, and stillness do the job instead of constant intensity.</p>
-              </div>
-            </article>
-          </div>
+          <article class="panel panel--accent kirigami-placeholder">
+            <span class="panel-label">Ready for uploads</span>
+            <h3 class="panel-title">Drop new square kirigami images into <code>img/Art/kirigami</code> and this section can be expanded into a dedicated grid next.</h3>
+            <p class="text-muted">Structure is already separated so your non-anime craft work can grow on this same page without disturbing the anime layout.</p>
+          </article>
         </section>
 
         <footer class="page-footer">
@@ -300,15 +440,33 @@
 
   <div class="viewer" data-viewer aria-hidden="true">
     <div class="viewer__panel">
-      <div class="viewer__header">
-        <div>
-          <h2 data-viewer-title>Artwork</h2>
-          <p data-viewer-description></p>
+      <div class="viewer__layout">
+        <div class="viewer__media" data-viewer-media>
+          <img data-viewer-image src="img/Art/viewer/Gojo.jpg" alt="">
         </div>
-        <button class="viewer__close" type="button" data-viewer-close aria-label="Close image viewer">Close</button>
-      </div>
-      <div class="viewer__body">
-        <img data-viewer-image src="img/Art/Prime.jpg" alt="">
+        <aside class="viewer__aside">
+          <div class="viewer__header">
+            <div>
+              <h2 data-viewer-title>Artwork</h2>
+              <p data-viewer-description></p>
+            </div>
+            <button class="viewer__close" type="button" data-viewer-close aria-label="Close image viewer">Close</button>
+          </div>
+          <dl class="viewer__meta-list">
+            <div><dt>Series</dt><dd data-viewer-series>Archive</dd></div>
+            <div><dt>Format</dt><dd data-viewer-format>A4</dd></div>
+            <div><dt>Character note</dt><dd data-viewer-character></dd></div>
+            <div><dt>Studio note</dt><dd data-viewer-studio></dd></div>
+          </dl>
+          <div class="viewer__actions">
+            <button class="viewer__like" type="button" data-viewer-like>
+              <span aria-hidden="true">&#10084;</span>
+              <span data-viewer-like-label>Like this artwork</span>
+            </button>
+            <p class="viewer__likes"><span data-viewer-like-count>0</span> likes</p>
+            <p class="text-muted viewer__device-note" data-viewer-device-note></p>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
